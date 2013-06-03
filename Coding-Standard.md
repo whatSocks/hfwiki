@@ -124,49 +124,50 @@ This is done to avoid double negatives when used in conjunction with the logical
 
 #2. Files
 ##2.1 Source Files
-1.  C++ header files should have the extension .h. Source files should have the extension .cpp.
-Puck.h, Puck.cpp
+####2.1.1. C++ header files should have the extension .h. Source files should have the extension .cpp.
+    Puck.h, Puck.cpp
 
-2.  A class should always be declared in a header file and defined in a source file where the name of the files match the name of the class.
-class Puck defined in Puck.h, Puck.cpp
+####2.1.2.  A class should always be declared in a header file and defined in a source file where the name of the files match the name of the class.
+`class Puck` defined in `Puck.h`, `Puck.cpp`
 
-3.  Most function implementations should reside in the source file.
-- Simple getters and setters that just access private member variables should appear inline in the class definition in the header file.
-class Puck {
-public:
-    // Not allowed!
-    int calculateCircumference () {
-        return PI * pow(_radius,2) ;
-    } 
+####2.1.3. Most function implementations should reside in the source file.
+    class Puck {
+    public:
+        // Not allowed!
+        int calculateCircumference () {
+            return PI * pow(_radius,2) ;
+        } 
 
-    // simple getters/setters should appear in the header file
-    int getRadius() const { return _radius; };
-    void setRadius(int radius) { _radius = radius; };
-    ...
-private:
-    int _radius;
-}
+        // simple getters/setters should appear in the header file
+        int getRadius() const { return _radius; };
+        void setRadius(int radius) { _radius = radius; };
+        ...
+    private:
+        int _radius;
+    }
 The header files should declare an interface, the source file should implement it. When looking for an implementation, the programmer should always know that it is found in the source file.
 
-4. File content must be kept within 128 columns.
+Simple getters and setters that just access private member variables should appear inline in the class definition in the header file.
 
-5. Special characters like TAB and page break must be avoided.
+####2.1.4. File content must be kept within 128 columns.
+
+####2.1.5. Special characters like TAB and page break must be avoided.
 Use four spaces for indentation.
 
-6. The incompleteness of split lines must be made obvious.
-teamGoals =  iginlaGoals + crosbyGoals +
-             malkinGoals;
+####2.1.6. The incompleteness of split lines must be made obvious.
+    teamGoals =  iginlaGoals + crosbyGoals +
+                 malkinGoals;
 
-addToScoreSheet(scorer, directAssister,
-                indirectAssister);
+    addToScoreSheet(scorer, directAssister,
+                    indirectAssister);
 
-setHeadline("Crosby scores 4"
-            " to force game 7.");
+    setHeadline("Crosby scores 4"
+                " to force game 7.");
 
-for (int teamNum = 0; teamNum < numTeams;
-     teamNum++) {
-  ...
-}
+    for (int teamNum = 0; teamNum < numTeams;
+         teamNum++) {
+      ...
+    }
 Split lines occurs when a statement exceed the 128 column limit given above. It is difficult to give rigid rules for how lines should be split, but the examples above should give a general hint.
 
 In general:
@@ -174,28 +175,27 @@ Break after a comma.
 Break after an operator.
 Align the new line with the beginning of the expression on the previous line.
 
+##2.2 Include Files and Include Statements
 
-2.2 Include Files and Include Statements
+####2.2.1. Header files must contain an include guard.
+    #ifndef __hifi__VoxelAgentData__
+    #define __hifi__VoxelAgentData__
+    
+    ...
+    
+    #endif /* defined(__hifi__VoxelAgentData__) */
 
-1. Header files must contain an include guard.
-#ifndef __hifi__VoxelAgentData__
-#define __hifi__VoxelAgentData__
+####2.2.2. Include statements should be sorted and grouped. Sorted by their hierarchical position in the system with low level files included first. Leave an empty line between groups of include statements.
+    #include <fstream>
+    #include <cstring>
+    
+    #include <qt/qbutton.h>
+    #include <qt/qtextfield.h>
+    
+    #include "Puck.h"
+    #include "PenaltyBox.h"
 
-...
-
-#endif /* defined(__hifi__VoxelAgentData__) */
-
-2.  Include statements should be sorted and grouped. Sorted by their hierarchical position in the system with low level files included first. Leave an empty line between groups of include statements.
-#include <fstream>
-#include <cstring>
-
-#include <qt/qbutton.h>
-#include <qt/qtextfield.h>
-
-#include "Puck.h"
-#include "PenaltyBox.h"
-
-3. Include statements must be located at the top of a file only.
+####2.2.3. Include statements must be located at the top of a file only.
 
 3. Statements
 3.1 Types
