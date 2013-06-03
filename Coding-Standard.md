@@ -2,8 +2,8 @@ Note that the current code base does not necessarily follow this with 100% consi
 
 Basically taken directly from http://geosoft.no/development/cppstyle.html  with some subtle changes and omissions.
 
-##1. Naming
-###1.1. General Naming Conventions
+#1. Naming
+##1.1. General Naming Conventions
 ####1.1.1. Names representing types must be in mixed case starting with upper case.  
     Coach, PenaltyBox
 
@@ -44,86 +44,86 @@ These will be discernible from class private variables since they are not prefix
 ####1.1.12. The name of the object is implicit, and should be avoided in a method name.  
     puck.getDensity();    // NOT: puck.getPuckDensity();
 
-## 1.2 Specific Naming Conventions
+##1.2 Specific Naming Conventions
+####1.2.1. The terms get/set must be used where an attribute is accessed directly.  
+    player.getNumber();  
+    player.setNumber(number);  
+    stick.getFlex();
+    stick.setFlex(flex);
 
-1. The terms get/set must be used where an attribute is accessed directly.  
-`player.getNumber();`  
-`player.setNumber(number);`  
-`stick.getFlex();`  
-`stick.setFlex(flex);`
-
-2. The term compute can be used in methods where something is computed.  
-`team->computerPowerPlayPercentage();`    
-`player->computePointsPerGame();`  
+####1.2.2. The term compute can be used in methods where something is computed.  
+    team->computerPowerPlayPercentage();    
+    player->computePointsPerGame();
 Give the reader the immediate clue that this is a potentially time-consuming operation, and if used repeatedly, he might consider caching the result. Consistent use of the term enhances readability.
 
-3. The term find can be used in methods where something is looked up.  
-`net.findGoalLinePosition();`  
-`team.findHeaviestPlayer();`  
+####1.2.3. The term find can be used in methods where something is looked up.  
+    net.findGoalLinePosition();  
+    team.findHeaviestPlayer();
 Give the reader the immediate clue that this is a simple look up method with a minimum of computations involved. Consistent use of the term enhances readability.
 
-4. The term initialize can be used where an object or a concept is established.  
-`rink.initializePaintedLines();`  
-`video.initializeOnScreenScore();`
+####1.2.4. The term initialize can be used where an object or a concept is established.  
+    rink.initializePaintedLines();  
+    video.initializeOnScreenScore();
 
-5. Variables representing GUI components should be suffixed by the component type name.  
-`scoreboardText`, `mainWindow`, `fileMenu`
+####1.2.5. Variables representing GUI components should be suffixed by the component type name.  
+    scoreboardText, mainWindow, fileMenu
 
-6. Plural form should be used on names representing a collection of objects.  
-`vector<Player> players;`  
-`float savePercentages[];`
+####1.2.6. Plural form should be used on names representing a collection of objects.  
+    vector<Player> players;  
+    float savePercentages[];
 
-7. The prefix num should be used for variables representing a number of objects.  
-`numGoals`, `numAssists`
+####1.2.7. The prefix num should be used for variables representing a number of objects.  
+    numGoals, numAssists
 
-8. The suffix Num should be used for variables representing an entity number.  
-`playerNum`, `teamNum`
+####1.2.8. The suffix Num should be used for variables representing an entity number.  
+    playerNum, teamNum
 
-9.  Iterator variables should be called i, j, k etc.  
-for (int i = 0; i < numGoals); i++) {
-    goals[i].playVideo();
-}
+####1.2.9.  Iterator variables should be called i, j, k etc.  
+    for (int i = 0; i < numGoals); i++) {
+        goals[i].playVideo();
+    }
 
-10. The prefix is should be used for boolean variables and methods.  
-`isGoodGoal`, `isRetired`, `isWinningTeam`  
-_Occasionally the has, can, should, and want prefixes will be better choices._  
+####1.2.10. The prefix is should be used for boolean variables and methods.  
+    isGoodGoal, isRetired, isWinningTeam
+Occasionally the has, can, should, and want prefixes will be better choices.
+
 _Note: “want” should generally be used for optional items that are specified by some third party action, e.g. command line or menu options that enable additional functionality, or protocol versioning where negotiation occurs between client and server._  
-`hasWonStanleyCup`, `canPlay`, `shouldPass`, `wantDebugLogging`
 
-11. Complement names must be used for complement operations  
-`get/set`, `add/remove`, `create/destroy`, `start/stop`
+    hasWonStanleyCup, canPlay, shouldPass, wantDebugLogging
 
-12. Abbreviations in names should be avoided.  
-`computeGoalsAgainstAverage();  // NOT: compGlsAgstAvg();`  
+####1.2.11. Complement names must be used for complement operations  
+    get/set, add/remove, create/destroy, start/stop
 
-_There are domain specific phrases that are more naturally known through their abbreviations/acronym. These phrases should be kept abbreviated._  
+####1.2.12. Abbreviations in names should be avoided.  
+    computeGoalsAgainstAverage();  // NOT: compGlsAgstAvg();  
+
+There are domain specific phrases that are more naturally known through their abbreviations/acronym. These phrases should be kept abbreviated.
 
 Use `html` instead of `hypertextMarkupLanguage`.
 
-13. Naming pointers specifically should be avoided.
-Puck* puck; // NOT: Puck * puckPtr;
+####1.2.13. Naming pointers specifically should be avoided.
+    Puck* puck; // NOT: Puck * puckPtr;
 Many variables in a C/C++ environment are pointers, so a convention like this is almost impossible to follow. Also objects in C++ are often oblique types where the specific implementation should be ignored by the programmer. Only when the actual type of an object is of special significance, the name should emphasize the type.
 
-###14. Negated boolean variable names must be avoided.
+####1.2.14. Negated boolean variable names must be avoided.
     bool isRetired; // NOT: isNotRetired or isNotPlaying
   
 This is done to avoid double negatives when used in conjunction with the logical negation operator.
 
-###15.  Enumeration constants can be prefixed by a common type name.
+####1.2.15.  Enumeration constants can be prefixed by a common type name.
     enum Jersey {
       JERSEY_HOME,
       JERSEY_AWAY,
       JERSEY_ALTERNATE
     };
 
-###16.  Exception classes should be suffixed with Exception.
+####1.2.16.  Exception classes should be suffixed with Exception.
     class GoalException {
       ...
     }
 
 #2. Files
 ##2.1 Source Files
-
 1.  C++ header files should have the extension .h. Source files should have the extension .cpp.
 Puck.h, Puck.cpp
 
