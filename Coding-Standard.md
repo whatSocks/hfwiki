@@ -24,29 +24,28 @@ Basically taken directly from http://geosoft.no/development/cppstyle.html  with 
 `puck::geometry`, `ice::math`
 
 7. Names representing template types should be a single uppercase letter.  
-`template<class R>`, `template<class B>`, `template<class K>` 
+`template<class R>`, `template<class B>`, `template<class K>`  
 This makes template names stand out relative to all other names used.
 
-8. Abbreviations and acronyms must be uppercase when used in a name or lowercase when used at the beginning of a variable
-showNHLStandings(); // not showNhlStandings();
-exportASCIIStanleyCup(); // not exportAsciiStanleyCup();
+8. Abbreviations and acronyms must be uppercase when used in a name or lowercase when used at the beginning of a variable  
+    showNHLStandings(); // not showNhlStandings();
+    exportASCIIStanleyCup(); // not exportAsciiStanleyCup();
+    UDPSocket udpSocket; // not UDPSocket uDPSocket;
 
-UDPSocket udpSocket; // not UDPSocket uDPSocket;
+9. Global variables should always be referred to using the :: operator.  
+`::jumbotron.powerOn()`, `::league.lockout();`
 
-9. Global variables should always be referred to using the :: operator.
-::jumbotron.powerOn(), ::league.lockout();
-
-10. Generic variables should have the same name as their type.
-void setPuckLogo(Logo* logo) // not void setPuckLogo(Logo* aLogo)
+10. Generic variables should have the same name as their type.  
+`void setPuckLogo(Logo* logo) // not void setPuckLogo(Logo* aLogo)`  
 These will be discernible from class private variables since they are not prefixed with an underscore.
 
-11. All names should be written in English.
-hockeyStick;   // NOT: batonDeHockey
+11. All names should be written in English.  
+`hockeyStick;   // NOT: batonDeHockey`
 
-12. The name of the object is implicit, and should be avoided in a method name.
-puck.getDensity();    // NOT: puck.getPuckDensity();
+12. The name of the object is implicit, and should be avoided in a method name.  
+`puck.getDensity();    // NOT: puck.getPuckDensity();`
 
-1.2 Specific Naming Conventions
+## 1.2 Specific Naming Conventions
 
 1. The terms get/set must be used where an attribute is accessed directly.
 player.getNumber();
