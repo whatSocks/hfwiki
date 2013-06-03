@@ -394,82 +394,79 @@ If the number does not have an obvious meaning by itself, the readability is enh
 
 ####4.1.11. Single statement if-else, for or while statements must be written with brackets.
 
-4.2 White space
+##4.2 White space
+####4.2.1. Conventional operators should be surrounded by a space character. 
+    potential = (age + skill) * injuryChance; 
+    // NOT: potential = (age + skill) * injuryChance;
 
- 1.
-- Conventional operators should be surrounded by a space character. 
-- C++ reserved words should be followed by a white space. 
-- Commas should be followed by a white space. 
-- Semicolons in for statments should be followed by a space character.
-potential = (age + skill) * injuryChance; 
-// NOT: potential = (age + skill) * injuryChance;
+#####4.2.2. C++ reserved words should be followed by a white space. 
+    while (true)   
+    // NOT: while(true) 
+    
+####4.2.3. Commas should be followed by a white space. 
+    setLine(leftWing, center, rightWing, leftDefense, rightDefense);  
+    // NOT: setLine(leftWing,center,rightWing,leftDefense,rightDefense);
 
-while (true)   
-// NOT: while(true) 
+####4.2.4. Semicolons in for statments should be followed by a space character.
+    for (i = 0; i < 10; i++) {  // NOT: for(i=0;i<10;i++){
 
-setLine(leftWing, center, rightWing, leftDefense, rightDefense);  
-// NOT: setLine(leftWing,center,rightWing,leftDefense,rightDefense);
+####4.2.5. Method names should not be followed by a white space
+An exception to this rule is allowed in header files/class definitions where multiple common functions are grouped together with similar forms and alignment makes things more readable (rule 4.2.4 wins). Examples are setters/getters.
+    
+    setCaptain(ovechkin); // NOT: setCaptain (ovechkin);
 
-for (i = 0; i < 10; i++) {  // NOT: for(i=0;i<10;i++){
+    // This type of alignment is acceptable for inline definitions
+    // in header files for groups of common functions
+    class Person {
+    pubic:
+       void setHeight (float       height) { _height = height; };
+       void setWeight (float       weight) { _weight = weight; };
+       void setName   (const char* name  ) { _name   = name;   };
+       void setAge    (int         age   ) { _age    = age;    };
+    ...
+    }
 
-2.  Method names should not be followed by a white space
+####4.2.6.  Logical units within a block should be separated by one blank line.
+    Team penguins = new Team();
 
-- An exception to this rule is allowed in header files/class definitions where multiple common functions are grouped together with similar forms and alignment makes things more readable (rule 4.2.4 wins). Examples are setters/getters.
-setCaptain(ovechkin); // NOT: setCaptain (crosby);
+    Player crosby = new Player();
+    Player fleury = new Player();
 
-// This type of alignment is acceptable for inline definitions
-// in header files for groups of common functions
-class Person {
-pubic:
-   void setHeight (float       height) { _height = height; };
-   void setWeight (float       weight) { _weight = weight; };
-   void setName   (const char* name  ) { _name   = name;   };
-   void setAge    (int         age   ) { _age    = age;    };
-...
-}
+    penguins.setCaptain(crosby);
+    penguins.setGoalie(fleury);
 
-3.  Logical units within a block should be separated by one blank line.
-Team penguins = new Team();
+    penguins.hireCoach();
 
-Player crosby = new Player();
-Player fleury = new Player();
+####4.2.7. Use alignment optionally wherever it enhances readability.
+    oddsToWin = (averageAge     * veteranWeight) +
+                (numStarPlayers * starPlayerWeight) +
+                (goalieOverall  * goalieWeight);
 
-penguins.setCaptain(crosby);
-penguins.setGoalie(fleury);
+    theGreatOneSlapShotSpeed  = computeShot(stickFlex, chara);
+    charaSlapShotSpeed        = computeShot(stickFlex, weber);
 
-penguins.hireCoach();
-
-4. Use alignment wherever it enhances readability.
-oddsToWin = (averageAge     * veteranWeight) +
-            (numStarPlayers * starPlayerWeight) +
-            (goalieOverall  * goalieWeight);
-
-weberSlapShotSpeed  = computeShot(stickFlex, chara);
-charaSlapShotSpeed  = computeShot(stickFlex, weber);
-
-4.3 Comments
-
-1.  All comments should be written in English
+##4.3 Comments
+####4.3.1.  All comments should be written in English
 In an international environment English is the preferred language.
 
-2. Use // for all comments, including multi-line comments.
-// Comment spanning
-// more than one line.
+####4.3.2. Use // for all comments, including multi-line comments.
+    // Comment spanning
+    // more than one line.
 There should be a space between the "//" and the actual comment
 
-3. Comments should be included relative to their position in the code
-while (true) {
+####4.3.3. Comments should be included relative to their position in the code
+    while (true) {
+        // crosby is always injured
+        crosbyInjury();
+    }     
+
+    // NOT: 
     // crosby is always injured
-    crosbyInjury();
-}     
+    while (true) {
+        crosbyInjury();
+    }
 
-// NOT: 
-// crosby is always injured
-while (true) {
-    crosbyInjury();
-}
-
-
+##5. New rules to include
 Other rules we’ve discussed....
 
 LHS vs RHS...
