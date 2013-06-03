@@ -32,7 +32,8 @@ This makes template names stand out relative to all other names used.
 `exportASCIIStanleyCup(); // not exportAsciiStanleyCup();`   
 `UDPSocket udpSocket; // not UDPSocket uDPSocket;`
 
-9. Global variables should always be referred to using the :: operator.  
+9. Global variables should always be referred to using the :: operator.
+
 `::jumbotron.powerOn()`, `::league.lockout();`
 
 10. Generic variables should have the same name as their type.  
@@ -47,33 +48,32 @@ These will be discernible from class private variables since they are not prefix
 
 ## 1.2 Specific Naming Conventions
 
-1. The terms get/set must be used where an attribute is accessed directly.
-player.getNumber();
-player.setNumber(number);
+1. The terms get/set must be used where an attribute is accessed directly.  
+`player.getNumber();`  
+`player.setNumber(number);`  
+`stick.getFlex();`  
+`stick.setFlex(flex);`
 
-stick.getFlex();
-stick.setFlex(flex);
-
-2. The term compute can be used in methods where something is computed.
-team->computerPowerPlayPercentage();
-player->computePointsPerGame();
+2. The term compute can be used in methods where something is computed.  
+`team->computerPowerPlayPercentage();`    
+`player->computePointsPerGame();`  
 Give the reader the immediate clue that this is a potentially time-consuming operation, and if used repeatedly, he might consider caching the result. Consistent use of the term enhances readability.
 
-3. The term find can be used in methods where something is looked up.
-net.findGoalLinePosition();
-team.findHeaviestPlayer();
+3. The term find can be used in methods where something is looked up.  
+`net.findGoalLinePosition();`  
+`team.findHeaviestPlayer();`  
 Give the reader the immediate clue that this is a simple look up method with a minimum of computations involved. Consistent use of the term enhances readability.
 
-4. The term initialize can be used where an object or a concept is established.
-rink.initializePaintedLines();
-video.initializeOnScreenScore();
+4. The term initialize can be used where an object or a concept is established.  
+`rink.initializePaintedLines();`  
+`video.initializeOnScreenScore();`
 
-5. Variables representing GUI components should be suffixed by the component type name.
-scoreboardText, mainWindow, fileMenu
+5. Variables representing GUI components should be suffixed by the component type name.  
+`scoreboardText`, `mainWindow`, `fileMenu`
 
-6. Plural form should be used on names representing a collection of objects.
-vector<Player> players;
-float          savePercentages[];
+6. Plural form should be used on names representing a collection of objects.  
+`vector<Player> players;`  
+`float savePercentages[];`
 
 7. The prefix num should be used for variables representing a number of objects.
 numGoals, numAssists
