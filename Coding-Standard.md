@@ -1,6 +1,4 @@
- As per discussion with Leo today more thought is required to decide where the best place for this document is (Worklist wiki, Worklist blog, new Hifi wiki), so for now I’m going to write down the initial stuff here.
-
-Note that the current code base does not follow this with any real consistency. It will be an ongoing process to try and sanitize the existing code to match these guidelines.
+Note that the current code base does not necessarily follow this with 100% consistency. It will be an ongoing process to try and sanitize the existing code to match these guidelines.
 
 Basically taken directly from http://geosoft.no/development/cppstyle.html  with some subtle changes and omissions.
 1. Naming
