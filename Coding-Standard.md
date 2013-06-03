@@ -32,8 +32,7 @@ This makes template names stand out relative to all other names used.
 `exportASCIIStanleyCup(); // not exportAsciiStanleyCup();`   
 `UDPSocket udpSocket; // not UDPSocket uDPSocket;`
 
-9. Global variables should always be referred to using the :: operator.
-
+9. Global variables should always be referred to using the :: operator.  
 `::jumbotron.powerOn()`, `::league.lockout();`
 
 10. Generic variables should have the same name as their type.  
