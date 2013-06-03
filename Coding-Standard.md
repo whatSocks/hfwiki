@@ -197,120 +197,113 @@ Align the new line with the beginning of the expression on the previous line.
 
 ####2.2.3. Include statements must be located at the top of a file only.
 
-3. Statements
-3.1 Types
-
-1. The parts of a class must be sorted public, protected and private. All sections must be identified explicitly. Not applicable sections should be left out.
+#3. Statements
+##3.1. Types
+####3.1.1. The parts of a class must be sorted public, protected and private. All sections must be identified explicitly. Not applicable sections should be left out.
 The ordering is "most public first" so people who only wish to use the class can stop reading when they reach the protected/private sections.
 
-2.  Type conversions must always be done explicitly. Never rely on implicit type conversion.
-floatValue = static_cast<float>(intValue); // NOT: floatValue = intValue;
+####3.1.2.  Type conversions must always be done explicitly. Never rely on implicit type conversion.
+    floatValue = static_cast<float>(intValue); // NOT: floatValue = intValue;
 
-3.  Type conversions should use C++ style and not C style.
-floatGoalsAgainst = static_cast<float>(intGoalsAgainst); 
-// NOT: floatGoalsAgainst = (float) intGoalsAgainst;
+####3.3.3.  Type conversions should use C++ style and not C style.
+    floatGoalsAgainst = static_cast<float>(intGoalsAgainst); 
+    // NOT: floatGoalsAgainst = (float) intGoalsAgainst;
 http://stackoverflow.com/questions/1609163/what-is-the-difference-between-static-cast-and-c-style-casting
 
-3.2 Variables
-
-1. Variables should be initialized where they are declared.
+##3.2 Variables
+####3.2.1. Variables should be initialized where they are declared.
 This ensures that variables are valid at any time. 
 
 Sometimes it is impossible to initialize a variable to a valid value where it is declared:
  
-Player crosby, dupuis, kunitz;
-getLineStats(&crosby, &dupuis, &kunitz);
+    Player crosby, dupuis, kunitz;
+    getLineStats(&crosby, &dupuis, &kunitz);
 
 In these cases it should be left uninitialized rather than initialized to some phony value.
 
-2. Use of global variables should be minimized.
+####3.2.2. Use of global variables should be minimized.
 http://stackoverflow.com/questions/484635/are-global-variables-bad
 
-3. Class variables should never be declared public.
+####3.2.3. Class variables should never be declared public.
 Use private variables and access functions instead. 
 
 One exception to this rule is when the class is essentially a data structure, with no behavior (equivalent to a C struct). In this case it is appropriate to make the class' instance variables public.
 
 Note that structs are kept in C++ for compatibility with C only, and avoiding them increases the readability of the code by reducing the number of constructs used. Use a class instead.
 
-4. C++ pointers and references should have their reference symbol next to the type rather than to the name.
-float* savePercentages; 
-// NOT: float *savePercentages; or float * savePercentages; 
+####3.2.4. C++ pointers and references should have their reference symbol next to the type rather than to the name.
+    float* savePercentages; 
+    // NOT: float *savePercentages; or float * savePercentages; 
 
-int& numCups;   
-// NOT: int &numCups; or int & numCups;
+    int& numCups;   
+    // NOT: int &numCups; or int & numCups;
 The pointer-ness or reference-ness of a variable is a property of the type rather than the name.
 
-5.  Implicit test for 0 should not be used other than for boolean variables or non-NULL pointers.
-if (numGoals != 0)  // NOT: if (numGoals)
-if (savePercentage != 0.0) // NOT: if (savePercentage)
+####3.2.5.  Implicit test for 0 should not be used other than for boolean variables or non-NULL pointers.
+    if (numGoals != 0)  // NOT: if (numGoals)
+    if (savePercentage != 0.0) // NOT: if (savePercentage)
 
-// Testing pointers for non-NULL is prefered, e.g. where
-// childNode is Node* and you’re testing for non NULL
-if (childNode) 
+    // Testing pointers for non-NULL is prefered, e.g. where
+    // childNode is Node* and you’re testing for non NULL
+    if (childNode) 
 
-// Testing for null is also preferred
-if (!childNode)
-
+    // Testing for null is also preferred
+    if (!childNode)
 
 It is not necessarily defined by the C++ standard that ints and floats 0 are implemented as binary 0.
 
-6.  Variables should be declared in the smallest scope possible.
+####3.2.6.  Variables should be declared in the smallest scope possible.
 Keeping the operations on a variable within a small scope, it is easier to control the effects and side effects of the variable.
 
-3.3 Loops
+##3.3 Loops
+####3.3.1.  Loop variables should be initialized immediately before the loop.
 
+####3.3.2. The form while (true) should be used for infinite loops.
+    while (true) {
+      :
+    }
 
-1.  Loop variables should be initialized immediately before the loop.
+    // NOT: 
 
-2. The form while (true) should be used for infinite loops.
-while (true) {
-  :
-}
+    for (;;) {
+      :
+    }
 
-// NOT: 
+    while (1) {
+      :
+    }
 
-for (;;) {
-  :
-}
+##3.4 Conditionals
+####3.4.1. The nominal case should be put in the if-part and the exception in the else-part of an if statement 
+    bool isGoal = pastGoalLine(position);
 
-while (1) {
-  :
-}
-
-3.4 Conditionals
-
-1. The nominal case should be put in the if-part and the exception in the else-part of an if statement 
-bool isGoal = pastGoalLine(position);
-
-if (isGoal) {
-  ...
-} else {
-  ...
-}
+    if (isGoal) {
+      ...
+    } else {
+      ...
+    }
 Makes sure that the exceptions don't obscure the normal path of execution. This is important for both the readability and performance.
 
-2. The conditional should be put on a separate line and wrapped in braces.
-if (isGoal) {
-    lightTheLamp();
-}      
+####3.4.2. The conditional should be put on a separate line and wrapped in braces.
+    if (isGoal) {
+        lightTheLamp();
+    }      
 
-// NOT: if (isGoal) lightTheLamp();
+    // NOT: if (isGoal) lightTheLamp();
 
-3.5 Miscellaneous
-
-1. The use of magic numbers in the code should be avoided. Numbers other than 0 and 1 should be considered declared as named constants instead.
+##3.5 Miscellaneous
+####3.5.1. The use of magic numbers in the code should be avoided. Numbers other than 0 and 1 should be considered declared as named constants instead.
 If the number does not have an obvious meaning by itself, the readability is enhanced by introducing a named constant instead. A different approach is to introduce a method from which the constant can be accessed.
 
-2. Floating point constants should always be written with decimal point and at least one decimal.
-double stickLength = 0.0;    // NOT:  double stickLength = 0;
+####3.5.2. Floating point constants should always be written with decimal point and at least one decimal.
+    double stickLength = 0.0;    // NOT:  double stickLength = 0;
 
-double penaltyMinutes;
-...
-penaltyMinutes = (minor + misconduct) * 2.0;
+    double penaltyMinutes;
+    ...
+    penaltyMinutes = (minor + misconduct) * 2.0;
 
-2. Floating point constants should always be written with a digit before the decimal point.
-double penaltyMinutes = 0.5;  // NOT:  double penaltyMinutes = .5;
+####3.5.3. Floating point constants should always be written with a digit before the decimal point.
+    double penaltyMinutes = 0.5;  // NOT:  double penaltyMinutes = .5;
 
 4. Layout and Comments
 4.1 Layout
