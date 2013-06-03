@@ -1,8 +1,8 @@
 Note that the current code base does not necessarily follow this with 100% consistency. It will be an ongoing process to try and sanitize the existing code to match these guidelines.
 
 Basically taken directly from http://geosoft.no/development/cppstyle.html  with some subtle changes and omissions.
-1. Naming
-1.1 General Naming Conventions
+# 1. Naming
+## 1.1 General Naming Conventions
 
 1. Names representing types must be in mixed case starting with upper case.
 Coach, PenaltyBox
