@@ -74,58 +74,56 @@ Give the reader the immediate clue that this is a simple look up method with a m
 `vector<Player> players;`  
 `float savePercentages[];`
 
-7. The prefix num should be used for variables representing a number of objects.
-numGoals, numAssists
+7. The prefix num should be used for variables representing a number of objects.  
+`numGoals`, `numAssists`
 
-8. The suffix Num should be used for variables representing an entity number.
-playerNum, teamNum
+8. The suffix Num should be used for variables representing an entity number.  
+`playerNum`, `teamNum`
 
-9.  Iterator variables should be called i, j, k etc.
+9.  Iterator variables should be called i, j, k etc.  
 for (int i = 0; i < numGoals); i++) {
     goals[i].playVideo();
 }
 
+10. The prefix is should be used for boolean variables and methods.  
+`isGoodGoal`, `isRetired`, `isWinningTeam`  
+_Occasionally the has, can, should, and want prefixes will be better choices._  
+_Note: “want” should generally be used for optional items that are specified by some third party action, e.g. command line or menu options that enable additional functionality, or protocol versioning where negotiation occurs between client and server._  
+`hasWonStanleyCup`, `canPlay`, `shouldPass`, `wantDebugLogging`
 
-10. The prefix is should be used for boolean variables and methods.
-isGoodGoal, isRetired, isWinningTeam
-Occasionally the has, can, should, and want prefixes will be better choices. 
+11. Complement names must be used for complement operations  
+`get/set`, `add/remove`, `create/destroy`, `start/stop`
 
-Note: “want” should generally be used for optional items that are specified by some third party action, e.g. command line or menu options that enable additional functionality, or protocol versioning where negotiation occurs between client and server
+12. Abbreviations in names should be avoided.  
+`computeGoalsAgainstAverage();  // NOT: compGlsAgstAvg();`  
 
-hasWonStanleyCup, canPlay, shouldPass, wantDebugLogging
+_There are domain specific phrases that are more naturally known through their abbreviations/acronym. These phrases should be kept abbreviated._  
 
-8. Complement names must be used for complement operations
-get/set, add/remove, create/destroy, start/stop
+Use `html` instead of `hypertextMarkupLanguage`.
 
-9. Abbreviations in names should be avoided.
-computeGoalsAgainstAverage();  // NOT: compGlsAgstAvg();
-There are domain specific phrases that are more naturally known through their abbreviations/acronym. These phrases should be kept abbreviated.
-
-Use html instead of hypertextMarkupLanguage.
-
-9. Naming pointers specifically should be avoided.
+13. Naming pointers specifically should be avoided.
 Puck* puck; // NOT: Puck * puckPtr;
 Many variables in a C/C++ environment are pointers, so a convention like this is almost impossible to follow. Also objects in C++ are often oblique types where the specific implementation should be ignored by the programmer. Only when the actual type of an object is of special significance, the name should emphasize the type.
 
-9. Negated boolean variable names must be avoided.
-bool isRetired; // NOT: isNotRetired or isNotPlaying
-This is done to avoid double negatives when used in conjunction with the logical negation operator.
+###14. Negated boolean variable names must be avoided.
+  bool isRetired; // NOT: isNotRetired or isNotPlaying
+  
+_This is done to avoid double negatives when used in conjunction with the logical negation operator._
 
-10.  Enumeration constants can be prefixed by a common type name.
-enum Jersey {
-    JERSEY_HOME,
-    JERSEY_AWAY,
-    JERSEY_ALTERNATE
-};
+###15.  Enumeration constants can be prefixed by a common type name.
+  enum Jersey {
+      JERSEY_HOME,
+      JERSEY_AWAY,
+      JERSEY_ALTERNATE
+  };
 
-11.  Exception classes should be suffixed with Exception.
-class GoalException {
-    ...
-}
+###16.  Exception classes should be suffixed with Exception.
+  class GoalException {
+      ...
+  }
 
-
-2. Files
-2.1 Source Files
+#2. Files
+##2.1 Source Files
 
 1.  C++ header files should have the extension .h. Source files should have the extension .cpp.
 Puck.h, Puck.cpp
