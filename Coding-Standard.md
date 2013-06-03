@@ -305,98 +305,94 @@ If the number does not have an obvious meaning by itself, the readability is enh
 ####3.5.3. Floating point constants should always be written with a digit before the decimal point.
     double penaltyMinutes = 0.5;  // NOT:  double penaltyMinutes = .5;
 
-4. Layout and Comments
-4.1 Layout
+#4. Layout and Comments
+##4.1. Layout
+####4.1.1. Basic indentation should be 4.
+    if (player.isCaptain) {
+        player.yellAtReferee();
+    }
+    
+####4.1.2. Use inline braces for block layout
+    while (!puckHeld) {
+        lookForRebound();
+    }
 
-1. Basic indentation should be 4.
-if (player.isCaptain) {
-    player.yellAtReferee();
-}
+    // NOT:
+    // while (!puckHeld) 
+    // {
+    //     lookForRebound();
+    // }    
 
+####4.1.3. The class declarations should have the following form:
+    class GoalieStick : public HockeyStick {
+    public:
+        ...
+    protected:
+        ...
+    private:
+        ...
+    }
 
-2. Use inline braces for block layout
-while (!puckHeld) {
-    lookForRebound();
-}
+####4.1.4.  Method definitions should have the following form:
+    void goalCelebration() {
+        ...
+    }
+    
+####4.1.5.  The if-else class of statements should have the following form:
+    if (isScorer) {
+        scoreGoal();
+    }
 
-// NOT:
-// while (!puckHeld) 
-// {
-//     lookForRebound();
-// }    
+    if (isScorer) {
+        scoreGoal();
+    } else {
+        saucerPass();
+    }
 
+    if (isScorer) {
+        scoreGoal();
+    } else if (isPlaymaker) {
+        saucerPass();
+    } else {
+        startFight();
+    }
 
-3. The class declarations should have the following form:
-class GoalieStick : public HockeyStick {
-public:
-    ...
-protected:
-    ...
-private:
-    ...
-}
+####4.1.6.  A for statement should have the following form:
+    for (int i = 0; i < GRETZKY_NUMBER; i++) {
+        getActivePlayerWithNumber(i);
+    }
 
-4.  Method definitions should have the following form:
-void goalCelebration() {
-    ...
-}
+####4.1.7. A while statement should have the following form:
+    while (!whistle) {
+        keepPlaying();
+    }
 
-5.  The if-else class of statements should have the following form:
-if (isScorer) {
-    scoreGoal();
-}
+####4.1.8. A do-while statement should have the following form:
+    do {
+       skate();
+    } while (!tired)
 
-if (isScorer) {
-    scoreGoal();
-} else {
-    saucerPass();
-}
+####4.1.9. A switch statement should have the following form:
+    switch (jerseyNumber) {
+        case 87 :
+            return crosby;
+        case 66 :
+            return lemieux;
+        case 99 :
+            return gretzky;
+        default :
+            return NULL; 
+    }
 
-if (isScorer) {
-    scoreGoal();
-} else if (isPlaymaker) {
-    saucerPass();
-} else {
-    startFight();
-}
+####4.1.10. A try-catch statement should have the following form:
+    try {
+        tradePlayer();
+    }
+    catch (NoTradeClauseException& exception) {
+        negotiateNoTradeClause();
+    }
 
-6.  A for statement should have the following form:
-for (int i = 0; i < GRETZKY_NUMBER; i++) {
-    getActivePlayerWithNumber(i);
-}
-
-7. A while statement should have the following form:
-while (!whistle) {
-    keepPlaying();
-}
-
-
-7. A do-while statement should have the following form:
-do {
-   skate();
-} while (!tired)
-
-8. A switch statement should have the following form:
-switch (jerseyNumber) {
-    case 87 :
-        return crosby;
-    case 66 :
-        return lemieux;
-    case 99 :
-        return gretzky;
-    default :
-        return NULL; 
-}
-
- 9. A try-catch statement should have the following form:
-try {
-    tradePlayer();
-}
-catch (NoTradeClauseException& exception) {
-    negotiateNoTradeClause();
-}
-
- 10. Single statement if-else, for or while statements must be written with brackets.
+####4.1.11. Single statement if-else, for or while statements must be written with brackets.
 
 4.2 White space
 
