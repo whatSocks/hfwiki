@@ -14,17 +14,17 @@ Basically taken directly from http://geosoft.no/development/cppstyle.html  with 
 3. Local variables must be in mixed case (and NOT prefixed with an underscore).  
 `redLine`, `icingFrequency`
 
-4. Constants must be all uppercase using underscore to separate words.
-MAX_RINK_LENGTH, COLOR_RED_LINE
+4. Constants must be all uppercase using underscore to separate words.  
+`MAX_RINK_LENGTH`, `COLOR_RED_LINE`
 
-5. Methods or functions must be verbs and written in mixed case starting with lower case.
-getPlayerNumber(), computeGoalsAgainstAverage()
+5. Methods or functions must be verbs and written in mixed case starting with lower case.  
+`getPlayerNumber()`, `computeGoalsAgainstAverage()`
 
-6. Names representing namespaces should be all lowercase.
-puck::geometry, ice::math
+6. Names representing namespaces should be all lowercase.  
+`puck::geometry`, `ice::math`
 
-7. Names representing template types should be a single uppercase letter.
-template<class R>, template<class B>, template<class K> 
+7. Names representing template types should be a single uppercase letter.  
+`template<class R>`, `template<class B>`, `template<class K>` 
 This makes template names stand out relative to all other names used.
 
 8. Abbreviations and acronyms must be uppercase when used in a name or lowercase when used at the beginning of a variable
