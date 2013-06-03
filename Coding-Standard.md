@@ -28,9 +28,9 @@ Basically taken directly from http://geosoft.no/development/cppstyle.html  with 
 This makes template names stand out relative to all other names used.
 
 8. Abbreviations and acronyms must be uppercase when used in a name or lowercase when used at the beginning of a variable  
-    showNHLStandings(); // not showNhlStandings();
-    exportASCIIStanleyCup(); // not exportAsciiStanleyCup();
-    UDPSocket udpSocket; // not UDPSocket uDPSocket;
+`showNHLStandings(); // not showNhlStandings();`    
+`exportASCIIStanleyCup(); // not exportAsciiStanleyCup();`   
+`UDPSocket udpSocket; // not UDPSocket uDPSocket;`
 
 9. Global variables should always be referred to using the :: operator.  
 `::jumbotron.powerOn()`, `::league.lockout();`
