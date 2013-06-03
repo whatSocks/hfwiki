@@ -106,21 +106,21 @@ Puck* puck; // NOT: Puck * puckPtr;
 Many variables in a C/C++ environment are pointers, so a convention like this is almost impossible to follow. Also objects in C++ are often oblique types where the specific implementation should be ignored by the programmer. Only when the actual type of an object is of special significance, the name should emphasize the type.
 
 ###14. Negated boolean variable names must be avoided.
-  bool isRetired; // NOT: isNotRetired or isNotPlaying
+    bool isRetired; // NOT: isNotRetired or isNotPlaying
   
 _This is done to avoid double negatives when used in conjunction with the logical negation operator._
 
 ###15.  Enumeration constants can be prefixed by a common type name.
-  enum Jersey {
+    enum Jersey {
       JERSEY_HOME,
       JERSEY_AWAY,
       JERSEY_ALTERNATE
-  };
+    };
 
 ###16.  Exception classes should be suffixed with Exception.
-  class GoalException {
+    class GoalException {
       ...
-  }
+    }
 
 #2. Files
 ##2.1 Source Files
