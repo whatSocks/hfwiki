@@ -7,4 +7,4 @@
 
 ### Installing MinGW
 
-<describe which options to use>
+[describe which options to use]
