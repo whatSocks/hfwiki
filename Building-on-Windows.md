@@ -9,7 +9,7 @@ The easiest way to grab the source is by going to [here](https://github.com/work
 This tutorial assumes you extract the source to **C:\hifi-master**
 
 ##Configuring
-* Run CMake (cmake-gui) and enter the following information:
+* Run CMake (cmake-gui) and enter the following information
 * Where is the source code: **C:\hifi-master** 
 * Where to build the binaries: **C:\hifi-win32** 
 * Click **Configure**.  It will ask if you want to create the directory, click **Yes**
