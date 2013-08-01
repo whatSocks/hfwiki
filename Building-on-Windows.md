@@ -1,7 +1,7 @@
 ##Requirements
 * CMake — download [here](http://www.cmake.org/cmake/resources/software.html), grab the Win32 installer
 * Visual Studio 2012 — a free version called VS Express can be downloaded [here](http://www.microsoft.com/visualstudio/eng/downloads#d-express-windows-desktop)
-* Qt 4.x libraries — download VS2010 libs [here](http://qt-project.org/downloads), for example I grabbed _Qt libraries 4.8.5 for Windows (VS 2010, 235 MB)_ **MUST GRAB 4.X, NOT THE NEWER 5.X**
+* Qt 5.1 libraries — download VS2012 libs [here](http://qt-project.org/downloads), for example I grabbed _Qt 5.1.0 for Windows 32-bit (VS 2012, 511 MB)_
 
 ##Getting the source
 The easiest way to grab the source is by going to [here](https://github.com/worklist/hifi) and clicking **Download ZIP** which is at the bottom of the right toolbar.
