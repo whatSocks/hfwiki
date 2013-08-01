@@ -12,7 +12,18 @@ This tutorial assumes you extract the source to **C:\hifi-master**
 * Run CMake (cmake-gui) and enter the following information:
 * Where is the source code: **C:\hifi-master** 
 * Where to build the binaries: **C:\hifi-win32** 
-* Click **Configure**.  Ensure the **Advanced** checkbox in the upper right is checked.
+* Click **Configure**.  It will ask if you want to create the directory, click **Yes**
+* Select **Visual Studio 11** as the generator for the project
+* Select **Use default native compilers** and click **Finish**
+* Once it says "Configuring done" at the bottom, click **Generate**
+* Close CMake
 
 ##Building
-Open **C:\hifi-win32\hifi.sln** in Visual Studio.
+* Open **C:\hifi-win32\hifi.sln** in Visual Studio 2012
+* Ensure you are in the **Debug** build target (you should be by default)
+* In the Solution Explorer, right click **interface** and click **Set as StartUp Project**
+* Right click **interface** and click **Build**
+* Once finished, the build log should say something similar to "Build: 7 succeeded, 0 failed, 0 up-to-date, 0 skipped"
+* Before you can debug the program, you must copy the required DLLs to the debug folder
+* Copy all the DLLs from **C:\hifi-master\externals\win32-dll\Debug** to **C:\hifi-win32\interface\Debug**
+* Now you can run and debug "interface" through Visual Studio
