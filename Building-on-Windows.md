@@ -15,7 +15,7 @@ This tutorial assumes you extract the source to **C:\hifi-master**
 * Click **Configure**.  It will ask if you want to create the directory, click **Yes**
 * Select **Visual Studio 11** as the generator for the project
 * Select **Use default native compilers** and click **Finish**
-* If you get an error here about not being able to find Qt5, try setting the **Qt5Core_DIR** variable to your Qt5 install location (for example **C:\Qt**)
+* If you get an error here about not being able to find Qt5, try setting the **Qt5Core_DIR** variable to your Qt5 install location (for example **C:\Qt\Qt5.1.0**)
 * Once it says "Configuring done" at the bottom, click **Generate**
 * Close CMake
 
