@@ -1,7 +1,12 @@
 ##Requirements
 * CMake — download [here](http://www.cmake.org/cmake/resources/software.html), grab the Win32 installer
 * Visual Studio 2012 — a free version called VS Express can be downloaded [here](http://www.microsoft.com/visualstudio/eng/downloads#d-express-windows-desktop)
-* Qt 5.1 libraries — download VS2012 libs [here](http://qt-project.org/downloads), for example I grabbed _Qt 5.1.0 for Windows 32-bit (VS 2012, 511 MB)_
+* Qt 5.1 libraries — see section below
+
+##Downloading Qt 5.1
+Download the online installer [here](http://qt-project.org/downloads), for example I grabbed _Qt Online Installer for Windows 32-bit (13 MB)_
+When it asks you to select components, ONLY select the following:
+* Qt > Qt 5.1.0 > msvc2012 64-bit OpenGL
 
 ##Getting the source
 The easiest way to grab the source is by going to [here](https://github.com/worklist/hifi) and clicking **Download ZIP** which is at the bottom of the right toolbar.
