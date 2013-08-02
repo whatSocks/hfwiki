@@ -12,7 +12,7 @@ When it asks you to select components, ONLY select the following:
 ##Getting the source
 The easiest way to grab the source is by going to [here](https://github.com/worklist/hifi) and clicking **Download ZIP** which is at the bottom of the right toolbar.
 
-This tutorial assumes you extract the source to **C:\hifi-master**
+This guide assumes you extract the source to **C:\hifi-master**
 
 ##Configuring
 * Run CMake (cmake-gui) and enter the following information
