@@ -5,6 +5,7 @@
 
 ##Downloading Qt 5.1
 Download the online installer [here](http://qt-project.org/downloads), for example I grabbed _Qt Online Installer for Windows 32-bit (13 MB)_
+
 When it asks you to select components, ONLY select the following:
 * Qt > Qt 5.1.0 > msvc2012 64-bit OpenGL
 
