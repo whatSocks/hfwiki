@@ -32,7 +32,7 @@ This tutorial assumes you extract the source to **C:\hifi-master**
 * Ensure you are in the **Debug** build target (you should be by default)
 * In the Solution Explorer, right click **interface** and click **Set as StartUp Project**
 * Right click **interface** and click **Build**
-* Once finished, the build log should say something similar to "Build: 7 succeeded, 0 failed, 0 up-to-date, 0 skipped"
+* Once finished, the build log should say something similar to "Build: 13 succeeded, 0 failed, 0 up-to-date, 0 skipped"
 * Before you can debug the program, you must copy the required DLLs to the debug folder
 * Copy all the DLLs from **C:\hifi-master\externals\win32-dll\Debug** to **C:\hifi-win32\interface\Debug**
 * Now you can run and debug "interface" through Visual Studio
