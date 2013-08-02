@@ -21,7 +21,9 @@ This tutorial assumes you extract the source to **C:\hifi-master**
 * Click **Configure**.  It will ask if you want to create the directory, click **Yes**
 * Select **Visual Studio 11** as the generator for the project
 * Select **Use default native compilers** and click **Finish**
-* Click **Add Entry** in the upper right and enter **"CMAKE_PREFIX_PATH"** as Name, Type **Path** and a value of **""**
+* An error will pop up saying project files may be invalid.  Click **OK**
+* Click **Add Entry** in the upper right and enter **"CMAKE_PREFIX_PATH"** as Name, Type **Path** and a Value of **"C:/Qt/5.1.0/msvc2010_opengl;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib"**  You may need to modify this for your Qt or Visual Studio configuration.
+* Click **Configure**
 * Once it says "Configuring done" at the bottom, click **Generate**
 * Close CMake
 
