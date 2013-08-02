@@ -7,7 +7,7 @@
 Download the online installer [here](http://qt-project.org/downloads), for example I grabbed _Qt Online Installer for Windows 32-bit (13 MB)_
 
 When it asks you to select components, ONLY select the following:
-* Qt > Qt 5.1.0 > msvc2012 64-bit OpenGL
+* Qt > Qt 5.1.0 > msvc2010 32-bit OpenGL
 
 ##Getting the source
 The easiest way to grab the source is by going to [here](https://github.com/worklist/hifi) and clicking **Download ZIP** which is at the bottom of the right toolbar.
@@ -21,7 +21,7 @@ This tutorial assumes you extract the source to **C:\hifi-master**
 * Click **Configure**.  It will ask if you want to create the directory, click **Yes**
 * Select **Visual Studio 11** as the generator for the project
 * Select **Use default native compilers** and click **Finish**
-* If you get an error here about not being able to find Qt5, try setting the **Qt5Core_DIR** variable to your Qt5 install location (for example **C:\Qt\Qt5.1.0\5.1.0\msvc2012\lib\cmake\Qt5Core**)
+* Click **Add Entry** in the upper right and enter **CMAKE_PREFIX_PATH** as Name, Type **Path** and a value of **""**
 * Once it says "Configuring done" at the bottom, click **Generate**
 * Close CMake
 
