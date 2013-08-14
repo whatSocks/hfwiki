@@ -440,6 +440,7 @@ A change to the length of a variable in these sections causes unnecessary change
 Align all n+2 lines with the indentation of the n+1 line.
 
 The following are all acceptable:
+    
     shootOnNet(puckVelocity,
         playerStrength,
         randomChance);
