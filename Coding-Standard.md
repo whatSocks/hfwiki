@@ -452,7 +452,6 @@ The following are all acceptable:
     if (longBooleanThatHasToDoWithHockey
         && anotherBooleanOnANewLine);
 
-
     isGoodGoal = playerSlapShotVelocity > 100
         ? true
         : false;
