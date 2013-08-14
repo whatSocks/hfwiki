@@ -1,5 +1,7 @@
 The following document outlines how code should be commented in order for documentation to automatically be generated with Doxygen.
 
+Node that comments need not be included to every method and member variable. Where the functionality of either is obvious based on the method signature or naming comments may be omitted. Doxygen will still show these elements, but will no added documentation.
+
 ###Classes
 Add a brief description to the class by using a C++ style comment with an additional slash.
 
