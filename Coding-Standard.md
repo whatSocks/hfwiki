@@ -411,20 +411,7 @@ If the number does not have an obvious meaning by itself, the readability is enh
     for (i = 0; i < 10; i++) {  // NOT: for(i=0;i<10;i++){
 
 ####4.2.5. Method names should not be followed by a white space
-An exception to this rule is allowed in header files/class definitions where multiple common functions are grouped together with similar forms and alignment makes things more readable (rule 4.2.4 wins). Examples are setters/getters.
-    
     setCaptain(ovechkin); // NOT: setCaptain (ovechkin);
-
-    // This type of alignment is acceptable for inline definitions
-    // in header files for groups of common functions
-    class Person {
-    pubic:
-       void setHeight (float       height) { _height = height; };
-       void setWeight (float       weight) { _weight = weight; };
-       void setName   (const char* name  ) { _name   = name;   };
-       void setAge    (int         age   ) { _age    = age;    };
-    ...
-    }
 
 ####4.2.6.  Logical units within a block should be separated by one blank line.
     Team penguins = new Team();
