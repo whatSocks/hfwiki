@@ -425,7 +425,7 @@ If the number does not have an obvious meaning by itself, the readability is enh
     penguins.hireCoach();
 
 ####4.2.7. Avoid adding optional spaces across multi-line statements and adjacent statements.
-Examples include:
+Avoid the following:
 
     oddsToWin = (averageAge     * veteranWeight) +
                 (numStarPlayers * starPlayerWeight) +
@@ -435,6 +435,26 @@ Examples include:
     charaSlapShotSpeed        = computeShot(stickFlex, weber);
 
 A change to the length of a variable in these sections causes unnecessary changes to the other lines.
+
+###4.2.8 Multi-line statements must have all n+1 lines indented at least one level (four spaces).
+Align all n+2 lines with the indentation of the n+1 line.
+
+The following are all acceptable:
+    shootOnNet(puckVelocity,
+        playerStrength,
+        randomChance);
+
+    shootOnNet(puckVelocty,
+               playerStrength,
+               randomChance);
+     
+    if (longBooleanThatHasToDoWithHockey
+        && anotherBooleanOnANewLine);
+
+
+    isGoodGoal = playerSlapShotVelocity > 100
+        ? true
+        : false;
 
 ##4.3 Comments
 ####4.3.1.  All comments should be written in English
