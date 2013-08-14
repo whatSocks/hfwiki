@@ -436,7 +436,7 @@ Avoid the following:
 
 A change to the length of a variable in these sections causes unnecessary changes to the other lines.
 
-###4.2.8 Multi-line statements must have all n+1 lines indented at least one level (four spaces).
+####4.2.8 Multi-line statements must have all n+1 lines indented at least one level (four spaces).
 Align all n+2 lines with the indentation of the n+1 line.
 
 The following are all acceptable:
