@@ -441,6 +441,8 @@ A change to the length of a variable in these sections causes unnecessary change
 In an international environment English is the preferred language.
 
 ####4.3.2. Use // for all comments, including multi-line comments.
+An exception to this rule applies for Doxygen comments where there are three slashes.
+
     // Comment spanning
     // more than one line.
 There should be a space between the "//" and the actual comment
