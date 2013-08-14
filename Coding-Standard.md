@@ -437,13 +437,17 @@ An exception to this rule is allowed in header files/class definitions where mul
 
     penguins.hireCoach();
 
-####4.2.7. Use alignment optionally wherever it enhances readability.
+####4.2.7. Avoid adding optional spaces across multi-line statements and adjacent statements.
+Examples include:
+
     oddsToWin = (averageAge     * veteranWeight) +
                 (numStarPlayers * starPlayerWeight) +
                 (goalieOverall  * goalieWeight);
 
     theGreatOneSlapShotSpeed  = computeShot(stickFlex, chara);
     charaSlapShotSpeed        = computeShot(stickFlex, weber);
+
+A change to the length of a variable in these sections causes unnecessary changes to the other lines.
 
 ##4.3 Comments
 ####4.3.1.  All comments should be written in English
@@ -479,4 +483,3 @@ if (0 == someVariable)...
 consts vs #define
 when/how to use consts vs defines, especial to avoid magic numbers
 format of getters/setters, especially as the relate to “const” methods and references to const members.
-
