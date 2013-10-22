@@ -19,11 +19,11 @@ $ cmake ..
 From the build directory, make a shell script from the contents below and run it.
 
 ```
-./assignment-server/assignment-server &
-./domain-server/domain-server --local  &
-./voxel-server/voxel-server --local &
-./avatar-mixer/avatar-mixer --local  &
-./audio-mixer/audio-mixer --local &
+./assignment-client/assignment-client &
+./domain-server/domain-server  &
+./animation-server/animation-server  --local &
+./pairing-server/pairing-server  &
+# ./space-server/space-server inprogress
 ```
 
 ## starting the interface
