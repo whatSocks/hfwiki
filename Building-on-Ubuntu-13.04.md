@@ -34,3 +34,14 @@ From hifi/interface (not hifi/build/interface) so the resources/ directory can b
 ../build/interface/interface --local
 ```
 
+## Build errors
+
+If you see this error
+```
+Linking CXX executable assignment-client
+/usr/bin/ld: ../libraries/voxel-server-library/libvoxel-server-library.a(civetweb.c.o): undefined reference to symbol 'dlclose@@GLIBC_2.2.5'
+/usr/bin/ld: note: 'dlclose@@GLIBC_2.2.5' is defined in DSO /lib/x86_64-linux-gnu/libdl.so.2 so try adding it to the linker command line
+/lib/x86_64-linux-gnu/libdl.so.2: could not read symbols: Invalid operation
+collect2: error: ld returned 1 exit status
+```
+It can be fixed with this hack, edit assignment-client/CMakeFiles/assignment-client.dir/link.txt and append "-ldl".
