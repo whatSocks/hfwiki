@@ -3,7 +3,7 @@ The following changes will get hifi building on Ubuntu 13.04. Start with a clean
 ## deb package installs
 
 ```
-$ sudo apt-get install qtdeclarative5-dev qtscript5-dev libqt5svg5-dev libqt5webkit5-dev qtmultimedia5-dev qtlocation5-dev qtsensors5-dev freeglut3-dev libxi-dev libxmu-dev libasound2-dev libjack-jackd2-dev
+$ sudo apt-get install qtdeclarative5-dev qtscript5-dev libqt5svg5-dev libqt5webkit5-dev qtmultimedia5-dev qtlocation5-dev qtsensors5-dev freeglut3-dev libxi-dev libxmu-dev libasound2-dev osspd
 ```
 
 ## cmake
