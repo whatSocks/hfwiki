@@ -14,18 +14,6 @@ $ cmake ..
 (all projects should compile successfully)
 ```
 
-## starting servers
-
-From the build directory, make a shell script from the contents below and run it.
-
-```
-./assignment-client/assignment-client &
-./domain-server/domain-server  &
-./animation-server/animation-server  --local &
-./pairing-server/pairing-server  &
-# ./space-server/space-server inprogress
-```
-
 ## starting the interface
 
 From hifi/interface (not hifi/build/interface) so the resources/ directory can be found, run the interface with this
@@ -44,4 +32,8 @@ Linking CXX executable assignment-client
 /lib/x86_64-linux-gnu/libdl.so.2: could not read symbols: Invalid operation
 collect2: error: ld returned 1 exit status
 ```
-It can be fixed with this hack, edit assignment-client/CMakeFiles/assignment-client.dir/link.txt and append "-ldl".
+It can be fixed with this hack, edit 
+```
+build$ vi assignment-client/CMakeFiles/assignment-client.dir/link.txt
+```
+Append "-ldl" to the first and only line in that file.
