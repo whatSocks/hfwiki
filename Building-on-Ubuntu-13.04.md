@@ -32,8 +32,9 @@ Linking CXX executable assignment-client
 /lib/x86_64-linux-gnu/libdl.so.2: could not read symbols: Invalid operation
 collect2: error: ld returned 1 exit status
 ```
-It can be fixed with this hack, edit 
+It can be fixed with this hack, append "-ldl" to link.txt with this 
 ```
-build$ vi assignment-client/CMakeFiles/assignment-client.dir/link.txt
+build$ sed -i -e's/$/-ldl/' assignment-client/CMakeFiles/assignment-client.dir/link.txt
+
 ```
-Append "-ldl" to the first and only line in that file.
+
