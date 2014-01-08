@@ -202,12 +202,15 @@ Align the new line with the beginning of the expression on the previous line.
 ####3.1.1. The parts of a class must be sorted public, protected and private. All sections must be identified explicitly. Not applicable sections should be left out.
 The ordering is "most public first" so people who only wish to use the class can stop reading when they reach the protected/private sections.
 
-####3.1.2.  Type conversions must always be done explicitly. Never rely on implicit type conversion.
-    floatValue = static_cast<float>(intValue); // NOT: floatValue = intValue;
+####3.1.2.  Never rely on implicit type conversion. // NOT: floatValue = intValue;
+#####3.1.2.1 Primitive types can use C style casting: 
+    foo = (float)bar;
 
-####3.3.3.  Type conversions should use C++ style and not C style.
-    floatGoalsAgainst = static_cast<float>(intGoalsAgainst); 
-    // NOT: floatGoalsAgainst = (float) intGoalsAgainst;
+#####3.1.2.2 Class pointers must use C++ style casting:
+    DerivedFoo* derivedFoo;
+    derivedFoo = static_cast<DerivedFoo*>(baseFoo);
+
+For more info about C++ stype casting:
 http://stackoverflow.com/questions/1609163/what-is-the-difference-between-static-cast-and-c-style-casting
 
 ##3.2 Variables
