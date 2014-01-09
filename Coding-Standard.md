@@ -39,7 +39,7 @@ This makes template names stand out relative to all other names used.
 These will be discernible from class private variables since they are not prefixed with an underscore.
 
 ####1.1.11. All names should be written in English.  
-    hockeyStick;   // NOT: batonDeHockey
+    hockeyStick;   // NOT: bastonDeHockey
 
 ####1.1.12. The name of the object is implicit, and should be avoided in a method name.  
     puck.getDensity();    // NOT: puck.getPuckDensity();
