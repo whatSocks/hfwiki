@@ -3,11 +3,12 @@ Note that the current code base does not necessarily follow this with 100% consi
 Basically taken directly from http://geosoft.no/development/cppstyle.html  with some subtle changes and omissions.
 
 ##### Table of Contents
-[1. Naming](#Naming)  
-[2. Files](#Files)  
-[3. Statements](#Statements)  
-[4. Layout and Comments](#Layout and Comments)  
+[1. Naming](#naming)  
+[2. Files](#files)  
+[3. Statements](#statements)  
+[4. Layout and Comments](#layout)  
 
+<a name="naming"/>
 #1. Naming
 ##1.1. General Naming Conventions
 ####1.1.1. Names representing types must be in mixed case starting with upper case.  
@@ -128,6 +129,7 @@ This is done to avoid double negatives when used in conjunction with the logical
       ...
     }
 
+<a name="files"/>
 #2. Files
 ##2.1 Source Files
 ####2.1.1. C++ header files should have the extension .h. Source files should have the extension .cpp.
@@ -203,6 +205,7 @@ Align the new line with the beginning of the expression on the previous line.
 
 ####2.2.3. Include statements must be located at the top of a file only.
 
+<a name="statements"/>
 #3. Statements
 ##3.1. Types
 ####3.1.1. The parts of a class must be sorted public, protected and private. All sections must be identified explicitly. Not applicable sections should be left out.
@@ -314,6 +317,7 @@ If the number does not have an obvious meaning by itself, the readability is enh
 ####3.5.3. Floating point constants should always be written with a digit before the decimal point.
     double penaltyMinutes = 0.5;  // NOT:  double penaltyMinutes = .5;
 
+<a name="layout"/>
 #4. Layout and Comments
 ##4.1. Layout
 ####4.1.1. Basic indentation should be 4.
