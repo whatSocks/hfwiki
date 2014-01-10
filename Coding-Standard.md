@@ -2,6 +2,12 @@ Note that the current code base does not necessarily follow this with 100% consi
 
 Basically taken directly from http://geosoft.no/development/cppstyle.html  with some subtle changes and omissions.
 
+##### Table of Contents
+[1. Naming](#Naming)  
+[2. Files](#Files)  
+[3. Statements](#Statements)  
+[4. Layout and Comments](#Layout and Comments)  
+
 #1. Naming
 ##1.1. General Naming Conventions
 ####1.1.1. Names representing types must be in mixed case starting with upper case.  
