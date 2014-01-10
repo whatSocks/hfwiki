@@ -212,12 +212,14 @@ Align the new line with the beginning of the expression on the previous line.
 The ordering is "most public first" so people who only wish to use the class can stop reading when they reach the protected/private sections.
 
 ####3.1.2.  Never rely on implicit type conversion. // NOT: floatValue = intValue;
-#####3.1.2.1 Primitive types can use C style casting: 
-    foo = (float)bar;
+#####3.1.2.1 Primitive types should use C style casting: 
+    int foo = 1;
+    float bar = (float)foo;
+    // NOT this: float fubar = float(foo);
 
 #####3.1.2.2 Class pointers must use C++ style casting:
-    DerivedFoo* derivedFoo;
-    derivedFoo = static_cast<DerivedFoo*>(baseFoo);
+    Player* player = getPlayer("forward");
+    Forward* forward = static_cast<Forward*>(player);
 
 For more info about C++ stype casting:
 http://stackoverflow.com/questions/1609163/what-is-the-difference-between-static-cast-and-c-style-casting
