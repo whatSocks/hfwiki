@@ -18,7 +18,7 @@ You can use the online installer, or the offline installer. If you use the offli
 
 ##Configure Qt 5.2
 Once Qt is installed, you need to manually configure the following:
-* Make sure the Qt runtime DLLs are loadable (You could add the Qt\...\bin\ directory to your path.) - You must do this before you attempt to build because some tools for the build depend on Qt.
+* Make sure the Qt runtime DLLs are loadable (You could add the Qt\5.2.0\msvc2010_opengl\bin\ directory to your path.) - You must do this before you attempt to build because some tools for the build depend on Qt.
 * Set the QT_CMAKE_PREFIX_PATH environment variable to your Qt\5.2.0\msvc2010_opengl directory
 
 ##Configure zLib
