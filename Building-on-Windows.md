@@ -42,13 +42,18 @@ This guide assumes you extract the source  or clone to **C:\Development\HiFi\hif
 * Once finished, the build log should say something similar to "Build: 20 succeeded, 0 failed, 0 up-to-date, 1 skipped"
 
 ##Preparing to run "Interface"
-We don't currently have a Windows installer, so before running Interface, you will need to ensure that all required resources are loadable. In particular you must make sure all required DLLs are loadable. You can accomplish this in several different ways. 
+We don't currently have a Windows installer, so before running Interface, you will need to ensure that all required resources are loadable. 
 
-One technique is described below:
-* create a directory C:\Development\HiFi\windows-dlls
-* add C:\Development\HiFi\windows-dlls to your path
-* copy the following files into this directory: zlib1.dll, freeglut.dll, glew32.dll, opencv_*.dll
-Note: you will find freeglut.dll and glew32.dll in the C:\Development\HiFi\hifi\interface\external tree. You will need to find the OpenCV dlls from where you installed OpenCV, and zlib1.dll from where you installed zLib.
+* In particular you must make sure all required DLLs are loadable. You can accomplish this in several different ways. 
+
+    One technique is described below:
+    * create a directory C:\Development\HiFi\windows-dlls
+    * add C:\Development\HiFi\windows-dlls to your path
+    * copy the following files into this directory: zlib1.dll, freeglut.dll, glew32.dll, opencv_*.dll
+
+    Note: you will find freeglut.dll and glew32.dll in the C:\Development\HiFi\hifi\interface\external tree. You will need to find the OpenCV dlls from where you installed OpenCV, and zlib1.dll from where you installed zLib.
+
+* You also need to make the interface\resources directory available to interface.exe. To do that, copy the contents of C:\Development\HiFi\hifi\interface\resources to C:\Development\HiFi\build\interface\Debug 
 
 ##Running "Interface"
 If you need to debug Interface, you can run interface from within Visual Studio (see more below). You can also run Interface by launching it from command line or File Explorer from **C:\Development\HiFi\hifi\build\interface\Debug\interface.exe**
