@@ -12,7 +12,7 @@
 You can use the online installer, or the offline installer. If you use the offline installer, be sure to select the "OpenGL" version.
 * Download the online installer [here](http://qt-project.org/downloads), for example I grabbed _Qt Online Installer for Windows 32-bit (13 MB)_
     * When it asks you to select components, ONLY select the following:
-        * Qt > Qt 5.1.0 > **msvc2010 32-bit OpenGL**
+        * Qt > Qt 5.2.0 > **msvc2010 32-bit OpenGL**
 
 * Download the offline installer [here] (http://download.qt-project.org/official_releases/qt/5.2/5.2.0/qt-windows-opensource-5.2.0-msvc2010_opengl-x86-offline.exe)
 
