@@ -6,7 +6,7 @@
 * VS2010 SP1 - http://www.microsoft.com/en-us/download/details.aspx?id=4422
 * Qt 5.2.0 - msvc2010_opengl version - see below
 * zLib for windows - Complete Package except sources [here (http://gnuwin32.sourceforge.net/downlinks/zlib.php)
-* Install OpenCV 2.4.5 - download [here] (http://sourceforge.net/projects/opencvlibrary/files/opencv-win/2.4.5/OpenCV-2.4.5.exe/download)
+
 
 ##Downloading Qt 5.2
 You can use the online installer, or the offline installer. If you use the offline installer, be sure to select the "OpenGL" version.
@@ -49,9 +49,9 @@ We don't currently have a Windows installer, so before running Interface, you wi
     One technique is described below:
     * create a directory C:\Development\HiFi\windows-dlls
     * add C:\Development\HiFi\windows-dlls to your path
-    * copy the following files into this directory: zlib1.dll, freeglut.dll, glew32.dll, opencv_*.dll
+    * copy the following files into this directory: zlib1.dll, freeglut.dll, glew32.dll
 
-    Note: you will find freeglut.dll and glew32.dll in the C:\Development\HiFi\hifi\interface\external tree. You will need to find the OpenCV dlls from where you installed OpenCV, and zlib1.dll from where you installed zLib.
+    Note: you will find freeglut.dll and glew32.dll in the C:\Development\HiFi\hifi\interface\external tree. You will need to find the zlib1.dll from where you installed zLib.
 
 * You also need to make the interface\resources directory available to interface.exe. To do that, copy the contents of C:\Development\HiFi\hifi\interface\resources to C:\Development\HiFi\build\interface\Debug 
 
