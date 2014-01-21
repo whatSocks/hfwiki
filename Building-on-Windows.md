@@ -53,7 +53,7 @@ We don't currently have a Windows installer, so before running Interface, you wi
 
     Note: you will find freeglut.dll and glew32.dll in the C:\Development\HiFi\hifi\interface\external tree. You will need to find the zlib1.dll from where you installed zLib.
 
-* You also need to make the interface\resources directory available to interface.exe. To do that, copy the contents of C:\Development\HiFi\hifi\interface\resources to C:\Development\HiFi\build\interface\Debug 
+* You also need to make the interface\resources directory available to interface.exe. To do that, copy the contents of C:\Development\HiFi\hifi\interface\resources to C:\Development\HiFi\build\interface\Debug\resources or if you're building a Release build to C:\Development\HiFi\build\interface\Release\resources
 
 ##Running "Interface"
 If you need to debug Interface, you can run interface from within Visual Studio (see more below). You can also run Interface by launching it from command line or File Explorer from **C:\Development\HiFi\hifi\build\interface\Debug\interface.exe**
