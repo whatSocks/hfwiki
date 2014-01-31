@@ -3,7 +3,21 @@ The following changes will get hifi building on Ubuntu 13.04. Start with a clean
 ## deb package installs
 
 ```
-$ sudo apt-get install qtdeclarative5-dev qtscript5-dev libqt5svg5-dev libqt5webkit5-dev qtmultimedia5-dev qtlocation5-dev qtsensors5-dev freeglut3-dev libxi-dev libxmu-dev libasound2-dev osspd
+$ sudo apt-get install build-essential cmake git libcurl4-openssl-dev libasound2 libxmu-dev libxi-dev freeglut3-dev libasound2-dev libjack-dev
+```
+
+## Qt dependencies
+
+1. Download lastest Qt packages from [Qt Project](http://qt-project.org/downloads) and install/untar on your prefered path.
+2. Set your `QT_CMAKE_PREFIX_PATH` environment variable to point to the cmake folder on your Qt installation: 
+
+```
+$ export QT_CMAKE_PREFIX_PATH=~/Qt5.2.0/5.2.0/gcc_64/lib/cmake
+```
+It's recommended that you move this variable setup to your `~/.bashrc` and/or `~/.bash_profile` so you'll save setting the path on new bash instances:
+
+```
+$ echo 'export QT_CMAKE_PREFIX_PATH=~/Qt5.2.0/5.2.0/gcc_64/lib/cmake' >> ~/.bashrc
 ```
 
 ## cmake
