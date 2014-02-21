@@ -1,6 +1,6 @@
 ## Linux
 * Assuming a successful build in a fresh repo...
-* In one terminal start the domain-server:
+* In a terminal start the domain-server:
 ```
 cd ~/my-repo/domain-server/
 ln -sf ../build/domain-server/domain-server ./
