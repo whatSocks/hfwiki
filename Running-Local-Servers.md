@@ -1,3 +1,5 @@
+At a minimum you need to run a domain-server and multiple assignment-clients.  The domain-server is in charge of handing out simulation assignments and providing their IP addresses to connecting clients.  The assignment-server is currently a single executable that spawns copies of itself.  Each copy knows how to wear multiple hats (audio-mixer, avatar-mixer, voxel-server, particle-server, or metavoxel-server) and will wear whatever hat their domain-server assigns them.
+
 ## Mac
 
 ## Linux
