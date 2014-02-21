@@ -1,3 +1,5 @@
+## Mac
+
 ## Linux
 * Assuming a successful build in a fresh repo...
 * In a terminal start the domain-server:
@@ -14,3 +16,5 @@ ln -sf ../build/assignment-client/assignment-client ./
 ./assignment-client -n 5
 ```
 * In the interface client: File --> Go To Domain... --> 127.0.0.1
+
+## Windows
