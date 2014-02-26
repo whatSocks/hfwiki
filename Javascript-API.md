@@ -17,7 +17,7 @@
 * bool MyAvatar.shouldRenderLocally 
 
 
-# Math helper functions 
+# Math Helper functions 
 Quaternion functions:
 * quat Quat.multiply(const glm::quat& q1, const glm::quat& q2);
 * Quat.fromVec3(const glm::vec3& vec3);
