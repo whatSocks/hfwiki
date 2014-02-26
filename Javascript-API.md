@@ -1,3 +1,5 @@
+Very basic description of our javascript API so far.  
+
 # Avatar Properties 
 
 * Vec3 MyAvatar.position 
