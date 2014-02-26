@@ -37,5 +37,26 @@ Vector3 functions:
 * vec3 subtract(const glm::vec3& v1, const glm::vec3& v2);
 * float length(const glm::vec3& v);
 
+# Camera Functions
+Addressable as Camera.foo():
+
+* String getMode()
+* setMode(string)
+* setPosition(vec3) 
+* vec3 getPosition() 
+* setOrientation(quat) 
+* quat getOrientation() 
+
+// The following only work on independent cameras
+// one time change to what the camera is looking at
+* lookAt(vec3)
+// fix what the camera is looking at, and keep the camera looking at this even if position changes
+* keepLookingAt(vec3)
+// stops the keep looking at feature, doesn't change what's being looked at, but will stop camera from
+// continuing to update it's orientation to keep looking at the item
+* void stopLooking() 
+
+// Pick ray for point on screen
+* PickRay computePickRay(x, y)
 
 
