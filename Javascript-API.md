@@ -1,6 +1,6 @@
 Very basic description of our javascript API so far.  
 
-# Avatar Properties 
+# My Avatar  
 
 * Vec3 MyAvatar.position 
 * float MyAvatar.scale 
@@ -37,6 +37,10 @@ Functions:
 * void setVoxelNonDestructive(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
 * void setVoxel(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
 * void eraseVoxel(float x, float y, float z, float scale)
+
+# Audio 
+* Sound Sound(URL)
+* playSound(Sound sound, AudioInjectorOptions injectorOptions)
 
 # Math Helper functions 
 Quaternion functions:
