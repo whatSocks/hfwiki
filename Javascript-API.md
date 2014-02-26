@@ -61,7 +61,7 @@ Addressable as Camera.foo():
 
 # Mouse, Keyboard and 3D Motion Controllers 
 
-Callback Functions: 
+Callback Functions you can register: 
 * keyPressEvent(KeyEvent event)
 * keyReleaseEvent(KeyEvent event)
 * mouseMoveEvent(MouseEvent event)
@@ -71,3 +71,38 @@ Callback Functions:
 * touchEndEvent(TouchEvent event);
 * wheelEvent(WheelEvent event);
 
+Functions: 
+    virtual bool isPrimaryButtonPressed() const = 0;
+    virtual glm::vec2 getPrimaryJoystickPosition() const = 0;
+
+    virtual int getNumberOfButtons() const = 0;
+    virtual bool isButtonPressed(int buttonIndex) const = 0;
+
+    virtual int getNumberOfTriggers() const = 0;
+    virtual float getTriggerValue(int triggerIndex) const = 0;
+
+    virtual int getNumberOfJoysticks() const = 0;
+    virtual glm::vec2 getJoystickPosition(int joystickIndex) const = 0;
+
+    virtual int getNumberOfSpatialControls() const = 0;
+    virtual glm::vec3 getSpatialControlPosition(int controlIndex) const = 0;
+    virtual glm::vec3 getSpatialControlVelocity(int controlIndex) const = 0;
+    virtual glm::vec3 getSpatialControlNormal(int controlIndex) const = 0;
+    virtual glm::quat getSpatialControlRawRotation(int controlIndex) const = 0;
+
+    virtual void captureKeyEvents(const KeyEvent& event) = 0;
+    virtual void releaseKeyEvents(const KeyEvent& event) = 0;
+
+    virtual void captureMouseEvents() = 0;
+    virtual void releaseMouseEvents() = 0;
+
+    virtual void captureTouchEvents() = 0;
+    virtual void releaseTouchEvents() = 0;
+
+    virtual void captureWheelEvents() = 0;
+    virtual void releaseWheelEvents() = 0;
+
+    virtual void captureJoystick(int joystickIndex) = 0;
+    virtual void releaseJoystick(int joystickIndex) = 0;
+
+    virtual glm::vec2 getViewportDimensions() const = 0;
