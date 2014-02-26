@@ -72,37 +72,34 @@ Callback Functions you can register:
 * wheelEvent(WheelEvent event);
 
 Functions: 
-    virtual bool isPrimaryButtonPressed() const = 0;
-    virtual glm::vec2 getPrimaryJoystickPosition() const = 0;
+bool isPrimaryButtonPressed()
+vec2 getPrimaryJoystickPosition()
+int getNumberOfButtons() 
+isButtonPressed(int buttonIndex) 
+int getNumberOfTriggers()
+float getTriggerValue(int triggerIndex)
+int getNumberOfJoysticks()
+vec2 getJoystickPosition(int joystickIndex)
 
-    virtual int getNumberOfButtons() const = 0;
-    virtual bool isButtonPressed(int buttonIndex) const = 0;
+int getNumberOfSpatialControls()
+vec3 getSpatialControlPosition(int controlIndex)
+vec3 getSpatialControlVelocity(int controlIndex)
+vec3 getSpatialControlNormal(int controlIndex)
+quat getSpatialControlRawRotation(int controlIndex)
 
-    virtual int getNumberOfTriggers() const = 0;
-    virtual float getTriggerValue(int triggerIndex) const = 0;
+void captureKeyEvents(const KeyEvent& event)
+void releaseKeyEvents(const KeyEvent& event)
 
-    virtual int getNumberOfJoysticks() const = 0;
-    virtual glm::vec2 getJoystickPosition(int joystickIndex) const = 0;
+void captureMouseEvents()
+void releaseMouseEvents()
 
-    virtual int getNumberOfSpatialControls() const = 0;
-    virtual glm::vec3 getSpatialControlPosition(int controlIndex) const = 0;
-    virtual glm::vec3 getSpatialControlVelocity(int controlIndex) const = 0;
-    virtual glm::vec3 getSpatialControlNormal(int controlIndex) const = 0;
-    virtual glm::quat getSpatialControlRawRotation(int controlIndex) const = 0;
+void captureTouchEvents()
+void releaseTouchEvents()
 
-    virtual void captureKeyEvents(const KeyEvent& event) = 0;
-    virtual void releaseKeyEvents(const KeyEvent& event) = 0;
+void captureWheelEvents() 
+void releaseWheelEvents()
 
-    virtual void captureMouseEvents() = 0;
-    virtual void releaseMouseEvents() = 0;
+void captureJoystick(int joystickIndex)
+void releaseJoystick(int joystickIndex)
 
-    virtual void captureTouchEvents() = 0;
-    virtual void releaseTouchEvents() = 0;
-
-    virtual void captureWheelEvents() = 0;
-    virtual void releaseWheelEvents() = 0;
-
-    virtual void captureJoystick(int joystickIndex) = 0;
-    virtual void releaseJoystick(int joystickIndex) = 0;
-
-    virtual glm::vec2 getViewportDimensions() const = 0;
+vec2 getViewportDimensions() 
