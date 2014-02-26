@@ -62,6 +62,7 @@ Addressable as Camera.foo():
 # Mouse, Keyboard and 3D Motion Controllers 
 
 Callback Functions you can register: 
+ex: Controller.mouseMoveEvent.connect(mouseMoveEvent); 
 * keyPressEvent(KeyEvent event)
 * keyReleaseEvent(KeyEvent event)
 * mouseMoveEvent(MouseEvent event)
