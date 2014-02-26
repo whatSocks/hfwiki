@@ -1,4 +1,4 @@
-# Avatar functions 
+# Avatar Properties 
 
 * Vec3 MyAvatar.position 
 * float MyAvatar.scale 
