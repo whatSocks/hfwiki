@@ -72,34 +72,34 @@ Callback Functions you can register:
 * wheelEvent(WheelEvent event);
 
 Functions: 
-bool isPrimaryButtonPressed()
-vec2 getPrimaryJoystickPosition()
-int getNumberOfButtons() 
-isButtonPressed(int buttonIndex) 
-int getNumberOfTriggers()
-float getTriggerValue(int triggerIndex)
-int getNumberOfJoysticks()
-vec2 getJoystickPosition(int joystickIndex)
+* bool isPrimaryButtonPressed()
+* vec2 getPrimaryJoystickPosition()
+* int getNumberOfButtons() 
+* isButtonPressed(int buttonIndex) 
+* int getNumberOfTriggers()
+* float getTriggerValue(int triggerIndex)
+* int getNumberOfJoysticks()
+* vec2 getJoystickPosition(int joystickIndex)
 
-int getNumberOfSpatialControls()
-vec3 getSpatialControlPosition(int controlIndex)
-vec3 getSpatialControlVelocity(int controlIndex)
-vec3 getSpatialControlNormal(int controlIndex)
-quat getSpatialControlRawRotation(int controlIndex)
+* int getNumberOfSpatialControls()
+* vec3 getSpatialControlPosition(int controlIndex)
+* vec3 getSpatialControlVelocity(int controlIndex)
+* vec3 getSpatialControlNormal(int controlIndex)
+* quat getSpatialControlRawRotation(int controlIndex)
 
-void captureKeyEvents(const KeyEvent& event)
-void releaseKeyEvents(const KeyEvent& event)
+* void captureKeyEvents(const KeyEvent& event)
+* void releaseKeyEvents(const KeyEvent& event)
 
-void captureMouseEvents()
-void releaseMouseEvents()
+* void captureMouseEvents()
+* void releaseMouseEvents()
 
-void captureTouchEvents()
-void releaseTouchEvents()
+* void captureTouchEvents()
+* void releaseTouchEvents()
 
-void captureWheelEvents() 
-void releaseWheelEvents()
+* void captureWheelEvents() 
+* void releaseWheelEvents()
 
-void captureJoystick(int joystickIndex)
-void releaseJoystick(int joystickIndex)
+* void captureJoystick(int joystickIndex)
+* void releaseJoystick(int joystickIndex)
 
-vec2 getViewportDimensions() 
+* vec2 getViewportDimensions() 
