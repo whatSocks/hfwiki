@@ -32,6 +32,12 @@ Functions:
 * ParticleID findClosestParticle(vec3 center, float radius)
 * QVector<ParticleID> findParticles(vec3 center, float radius)
 
+# Voxels 
+* VoxelDetail getVoxelAt(float x, float y, float z, float scale)
+* void setVoxelNonDestructive(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
+* void setVoxel(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
+* void eraseVoxel(float x, float y, float z, float scale)
+
 # Math Helper functions 
 Quaternion functions:
 * quat Quat.multiply(const glm::quat& q1, const glm::quat& q2);
