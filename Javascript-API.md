@@ -103,3 +103,19 @@ Functions:
 * void releaseJoystick(int joystickIndex)
 
 * vec2 getViewportDimensions() 
+
+# Clipboard functions for Voxels 
+Clipboard.  -->
+* cutVoxel(VoxelDetail sourceVoxel);
+* cutVoxel(float x, float y, float z, float s);
+* copyVoxel(VoxelDetail sourceVoxel);
+* copyVoxel(float x, float y, float z, float s);
+* pasteVoxel(VoxelDetail destinationVoxel);
+* pasteVoxel(float x, float y, float z, float s);
+* deleteVoxel(const VoxelDetail& sourceVoxel);
+* deleteVoxel(float x, float y, float z, float s);
+* exportVoxel(const VoxelDetail& sourceVoxel);
+* exportVoxel(float x, float y, float z, float s);
+* importVoxels();
+* nudgeVoxel(VoxelDetail sourceVoxel, vec3 nudgeVec);
+* nudgeVoxel(float x, float y, float z, float s, vec3 nudgeVec);
