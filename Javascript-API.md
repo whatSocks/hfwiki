@@ -52,7 +52,7 @@ Quaternion functions:
 * vec3 getRight(const glm::quat& orientation);
 * vec3 getUp(const glm::quat& orientation);
 * vec3 safeEulerAngles(const glm::quat& orientation);
-* quat angleAxis(float angle, const glm::vec3& v);
+* quat angleAxis(float angleInDegrees, const glm::vec3& v);
 
 Vector3 functions: 
 * vec3 multiply(const glm::vec3& v1, const glm::vec3& v2);
