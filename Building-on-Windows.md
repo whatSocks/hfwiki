@@ -60,4 +60,5 @@ If you need to debug Interface, you can run interface from within Visual Studio 
 
 ##Debugging "Interface"
 * In the Solution Explorer, right click **interface** and click **Set as StartUp Project**
+* Set the "Working Directory" for the Interface debugging sessions to the Debug output directory so that your application can load resources. Do this: right click **interface** and click **Properties**, choose **Debugging** from Configuration Properties, set **Working Directory** to **.\Debug**
 * Now you can run and debug "interface" through Visual Studio
