@@ -18,6 +18,19 @@ Very basic description of our javascript API so far.
 * String MyAvatar.billboardURL 
 * bool MyAvatar.shouldRenderLocally 
 
+# Particles 
+Callback Functions: 
+particleCollisionWithVoxel(ParticleID particleID, VoxelDetail voxel);
+particleCollisionWithParticle(ParticleID idA, ParticleID idB);
+
+Functions:
+* ParticleID addParticle(ParticleProperties properties)
+* ParticleID identifyParticle(ParticleID particleID)
+* ParticleProperties getParticleProperties(ParticleID particleID)
+* ParticleID editParticle(ParticleID particleID, ParticleProperties properties);
+* deleteParticle(ParticleID particleID)
+* ParticleID findClosestParticle(vec3 center, float radius)
+* QVector<ParticleID> findParticles(vec3 center, float radius)
 
 # Math Helper functions 
 Quaternion functions:
