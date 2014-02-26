@@ -20,8 +20,8 @@ Very basic description of our javascript API so far.
 
 # Particles 
 Callback Functions: 
-particleCollisionWithVoxel(ParticleID particleID, VoxelDetail voxel);
-particleCollisionWithParticle(ParticleID idA, ParticleID idB);
+* particleCollisionWithVoxel(ParticleID particleID, VoxelDetail voxel);
+* particleCollisionWithParticle(ParticleID idA, ParticleID idB);
 
 Functions:
 * ParticleID addParticle(ParticleProperties properties)
