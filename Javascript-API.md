@@ -30,7 +30,12 @@ Quaternion functions:
 * quat angleAxis(float angle, const glm::vec3& v);
 
 Vector3 functions: 
-
+* vec3 multiply(const glm::vec3& v1, const glm::vec3& v2);
+* vec3 multiply(const glm::vec3& v1, float f);
+* vec3 multiplyQbyV(const glm::quat& q, const glm::vec3& v);
+* vec3 sum(const glm::vec3& v1, const glm::vec3& v2);
+* vec3 subtract(const glm::vec3& v1, const glm::vec3& v2);
+* float length(const glm::vec3& v);
 
 
 
