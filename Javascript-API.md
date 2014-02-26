@@ -59,7 +59,7 @@ Addressable as Camera.foo():
 // Pick ray for point on screen
 * PickRay computePickRay(x, y)
 
-# Mouse and Motion Controllers 
+# Mouse, Keyboard and 3D Motion Controllers 
 
 Callback Functions: 
 * keyPressEvent(KeyEvent event)
