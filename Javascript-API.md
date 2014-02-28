@@ -1,6 +1,7 @@
-Very basic description of our javascript API so far.  
+High Fidelity uses Javascript as the language for scriptable in-world objects, as well as extensions to the capability of the Interface client.  In the File menu of the interface, under scripts, you can open and run javascript extensions, and those scripts that are running will persist across sessions.  Additionally, you can deploy javascript code by entering it as an 'assignment', which will be deployed to the first available assignment client, which is a dedicated machine/device that will connect to the domain of your choice and do something.  The various function calls and properties for things that you can do from within these Javascript files are listed here. 
 
-# My Avatar  
+# Avatar functions  
+If you are running on the interface client, the 'Avatar' is you, and is called 'MyAvatar'.  If you are running an assignment that is not on an interactive client, the avatar object is called 'Avatar'.  
 
 * Vec3 MyAvatar.position 
 * float MyAvatar.scale 
@@ -18,7 +19,9 @@ Very basic description of our javascript API so far.
 * String MyAvatar.billboardURL 
 * bool MyAvatar.shouldRenderLocally 
 
-# Particles 
+# Particles
+Particles are moving/moveable objects that are stored in an octree server and transmitted to clients and interactive agents that are near enough to see them.  Particles can have model files attached to them, changing their appearance.  
+ 
 Callback Functions: 
 * particleCollisionWithVoxel(ParticleID particleID, VoxelDetail voxel);
 * particleCollisionWithParticle(ParticleID idA, ParticleID idB);
@@ -33,16 +36,38 @@ Functions:
 * QVector<ParticleID> findParticles(vec3 center, float radius)
 
 # Voxels 
+Voxels are the space filling 'blocks' consisting of colors and other meta-values that you see around you in the virtual world.  Voxels can be created, deleted, and changed by interactive programs.  
+
 * VoxelDetail getVoxelAt(float x, float y, float z, float scale)
 * void setVoxelNonDestructive(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
 * void setVoxel(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
 * void eraseVoxel(float x, float y, float z, float scale)
 
-# Audio 
+# Clipboard functions for Voxels 
+Clipboard.  -->
+* cutVoxel(VoxelDetail sourceVoxel);
+* cutVoxel(float x, float y, float z, float s);
+* copyVoxel(VoxelDetail sourceVoxel);
+* copyVoxel(float x, float y, float z, float s);
+* pasteVoxel(VoxelDetail destinationVoxel);
+* pasteVoxel(float x, float y, float z, float s);
+* deleteVoxel(const VoxelDetail& sourceVoxel);
+* deleteVoxel(float x, float y, float z, float s);
+* exportVoxel(const VoxelDetail& sourceVoxel);
+* exportVoxel(float x, float y, float z, float s);
+* importVoxels();
+* nudgeVoxel(VoxelDetail sourceVoxel, vec3 nudgeVec);
+* nudgeVoxel(float x, float y, float z, float s, vec3 nudgeVec);
+
+# Audio
+Audio is continuously mixed in 3D and re-transmitted to interactive clients by the 'Audio Mixer' assignment clients.  Audio can be injected into the world, using these commands. 
+
 * Sound Sound(URL)
 * playSound(Sound sound, AudioInjectorOptions injectorOptions)
 
 # Math Helper functions 
+Quaternion and Vector functions are included in the javascript API to make it easier to build content. 
+
 Quaternion functions:
 * quat Quat.multiply(const glm::quat& q1, const glm::quat& q2);
 * Quat.fromVec3(const glm::vec3& vec3);
@@ -63,6 +88,8 @@ Vector3 functions:
 * float length(const glm::vec3& v);
 
 # Camera Functions
+The camera is the viewport for an interactive client (Interface).  You can move the camera (independent of the avatar) through the javascript calls here.  
+
 Addressable as Camera.foo():
 
 * String getMode()
@@ -85,6 +112,7 @@ Addressable as Camera.foo():
 * PickRay computePickRay(x, y)
 
 # Mouse, Keyboard and 3D Motion Controllers 
+The mouse as well as 3D controllers like the Razer Hydra can be accessed from these functions. 
 
 Callback Functions you can register: 
 ex: Controller.mouseMoveEvent.connect(mouseMoveEvent); 
@@ -123,18 +151,3 @@ Functions:
 * void releaseJoystick(int joystickIndex)
 * vec2 getViewportDimensions() 
 
-# Clipboard functions for Voxels 
-Clipboard.  -->
-* cutVoxel(VoxelDetail sourceVoxel);
-* cutVoxel(float x, float y, float z, float s);
-* copyVoxel(VoxelDetail sourceVoxel);
-* copyVoxel(float x, float y, float z, float s);
-* pasteVoxel(VoxelDetail destinationVoxel);
-* pasteVoxel(float x, float y, float z, float s);
-* deleteVoxel(const VoxelDetail& sourceVoxel);
-* deleteVoxel(float x, float y, float z, float s);
-* exportVoxel(const VoxelDetail& sourceVoxel);
-* exportVoxel(float x, float y, float z, float s);
-* importVoxels();
-* nudgeVoxel(VoxelDetail sourceVoxel, vec3 nudgeVec);
-* nudgeVoxel(float x, float y, float z, float s, vec3 nudgeVec);
