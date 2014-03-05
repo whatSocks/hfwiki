@@ -1,6 +1,6 @@
 ##Requirements
 * git or GitHub
-* CMake — download [here](http://www.cmake.org/cmake/resources/software.html), grab the Win32 installer
+* CMake — download [here](http://www.cmake.org/cmake/resources/software.html), grab the Win32 installer, **Version 2.8.11 minimum**
 * Visual Studio C++ 2010 Express for Desktop — a free version can be downloaded [here](http://www.visualstudio.com/en-us/downloads#d-2010-express)
 * Windows SDK 7.1/.NET 4 Framework - http://www.microsoft.com/en-us/download/details.aspx?id=8279
 * VS2010 SP1 - http://www.microsoft.com/en-us/download/details.aspx?id=4422
