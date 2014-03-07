@@ -1,5 +1,5 @@
 _A collection of notes for new users_
 
-## Revealing the Library directory
+## OS X: Revealing the Library directory
 Snapshots and Logs are saved to Users>Username>Library>Application Support>Interface
 Recent versions of OSX hide the library folder by default, and it must be enabled through the terminal with `"chflags nohidden ~/Library/“`
