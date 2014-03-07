@@ -1,4 +1,4 @@
-### A collection of notes for new users
+_A collection of notes for new users_
 
 ## Revealing the Library directory
 Snapshots and Logs are saved to Users>Username>Library>Application Support>Interface
