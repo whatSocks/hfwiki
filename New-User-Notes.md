@@ -24,6 +24,6 @@ Copy lib/osx_x64/release_dll/libsixense_x64.dylib to Applications/Interface/Cont
 
 ## OS X: Setting up the Oculus Rift
 
-## OS X: "Interface cannot be opened because of a problem" After update to Build 148
+## OS X: "Interface cannot be opened because of a problem" after update to Build 148
 
 Build 148 won't run without the Sixense SDK installed in the Frameworks folder as described above.
