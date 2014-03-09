@@ -23,3 +23,7 @@ Download the Sixense SDK from http://sixense.com/hardware/sixensesdk
 Copy lib/osx_x64/release_dll/libsixense_x64.dylib to Applications/Interface/Contents/Frameworks 
 
 ## OS X: Setting up the Oculus Rift
+
+## OS X: After update to Build 148, "Interface cannot be opened because of a problem."
+
+Build 148 won't run without the Sixense SDK installed in the Frameworks folder as described above.
