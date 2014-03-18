@@ -19,7 +19,9 @@ If you are running on the interface client, the 'Avatar' is you, and is called '
 * String MyAvatar.billboardURL 
 * bool MyAvatar.shouldRenderLocally 
 
-## Animation Of Joints 
+### Animation Of Joints 
+Use these functions to get and set the rotations of an avatar's joints.  
+
 stringList MyAvatar.getJointNames() 
 This function will return a list of names of joints in the avatar you are wearing (obviously we are going to need to pick some sort of typical standard so that animations can be mapped to avatars) 
 
