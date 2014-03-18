@@ -19,6 +19,15 @@ If you are running on the interface client, the 'Avatar' is you, and is called '
 * String MyAvatar.billboardURL 
 * bool MyAvatar.shouldRenderLocally 
 
+## Animation Of Joints 
+stringList MyAvatar.getJointNames() 
+This function will return a list of names of joints in the avatar you are wearing (obviously we are going to need to pick some sort of typical standard so that animations can be mapped to avatars) 
+
+MyAvatar.setJointData(string jointName, Quat rotation)     set a joint to a new position
+MyAvatar.clearJointData("joint_R_hip")  Return the joint to the default position
+
+Note that right now, joint positions are updated every frame whenever they are moved away from the default position.  More work to come on using known last state and delta vectors to more efficiently encode. 
+
 # Particles
 Particles are moving/moveable objects that are stored in an octree server and transmitted to clients and interactive agents that are near enough to see them.  Particles can have model files attached to them, changing their appearance.  
  
@@ -150,4 +159,3 @@ Functions:
 * void captureJoystick(int joystickIndex)
 * void releaseJoystick(int joystickIndex)
 * vec2 getViewportDimensions() 
-
