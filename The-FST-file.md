@@ -59,6 +59,6 @@ As you can see from the example the blendshape (bs) is mapped to the Shape name 
 
 These mapping and the fst file can be generated in two ways.
 
-1. Using Faceshift's client. If you are using the faceshift client to rig your avatar head and an approved 3D camera to drive facial expressions, refer to the Exporting your Rigged Avatar document. 
+1. Using Faceshift's client. If you are using the faceshift client to rig your avatar head and an approved 3D camera to drive facial expressions, refer to the [Exporting your Rigged Avatar](https://github.com/highfidelity/hifi/wiki/Exporting-Your-Rigged-Avatar-From-Faceshift) document. 
 
 1. Manually. If you don't have faceshift and are just using the default 2D camera face tracking option, just create a text file and save as .fst or change the file name after saving. Make sure you specify which directories the fbx and texture files are.
