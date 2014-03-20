@@ -8,6 +8,7 @@ Faceshift has the following requirements and limitations for importing:
 ## Import
 
 In the Display tab you can select different targets for animation. fsStudio provides a set of default characters, but you can also import your own character via the fbx file format. You will need to create a mapping from the fsStudio actor face to your own characters. The mapping can be saved, and fsStudio will automatically list all imported target characters where the created mapping file resides in the target directory of the workspace. To import a new character click **Import**, previous imported characters can be edited.
+
 ![Import button](http://cdn.freshdesk.com/data/helpdesk/attachments/production/2012510/original/target_import.png?1352990859)
 
 
