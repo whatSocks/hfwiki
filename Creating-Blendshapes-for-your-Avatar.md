@@ -28,54 +28,54 @@ Rename bones, paint weight, and parent any extra 3D object to the head joint. If
 
 Create shapes for the eyes, mouth, brows etc. If you want to create a 1:1 mapping of shapes to map to Faceshifts, you will need to create shapes for:
 
-EyeBlink_L
-EyeBlink_R
-EyeSquint_L
-EyeSquint_R
-EyeDown_L
-EyeDown_R
-EyeIn_L
-EyeIn_R
-EyeOpen_L
-EyeOpen_R
-EyeOut_L
-EyeOut_R
-EyeUp_L
-EyeUp_R
-BrowsD_L
-BrowsD_R
-BrowsU_C
-BrowsU_L
-BrowsU_R
-JawFwd
-JawLeft
-JawOpen
-JawChew
-JawRight
-MouthLeft
-MouthRight
-MouthFrown_L
-MouthFrown_R
-MouthSmile_L
-MouthSmile_R
-MouthDimple_L
-MouthDimple_R
-LipsStretch_L
-LipsStretch_R
-LipsUpperClose
-LipsLowerClose
-LipsUpperUp
-LipsLowerDown
-LipsUpperOpen
-LipsLowerOpen
-LipsFunnel
-LipsPucker
-ChinLowerRaise
-ChinUpperRaise
-Sneer
-Puff
-CheekSquint_L
-CheekSquint_R
+* EyeBlink_L
+* EyeBlink_R
+* EyeSquint_L
+* EyeSquint_R
+* EyeDown_L
+* EyeDown_R
+* EyeIn_L
+* EyeIn_R
+* EyeOpen_L
+* EyeOpen_R
+* EyeOut_L
+* EyeOut_R
+* EyeUp_L
+* EyeUp_R
+* BrowsD_L
+* BrowsD_R
+* BrowsU_C
+* BrowsU_L
+* BrowsU_R
+* JawFwd
+* JawLeft
+* JawOpen
+* JawChew
+* JawRight
+* MouthLeft
+* MouthRight
+* MouthFrown_L
+* MouthFrown_R
+* MouthSmile_L
+* MouthSmile_R
+* MouthDimple_L
+* MouthDimple_R
+* LipsStretch_L
+* LipsStretch_R
+* LipsUpperClose
+* LipsLowerClose
+* LipsUpperUp
+* LipsLowerDown
+* LipsUpperOpen
+* LipsLowerOpen
+* LipsFunnel
+* LipsPucker
+* ChinLowerRaise
+* ChinUpperRaise
+* Sneer
+* Puff
+* CheekSquint_L
+* CheekSquint_R
 
 Ordering them exactly as shown above will make it easier to rig when you move to Faceshift. 
 
@@ -93,6 +93,8 @@ Select the joints and all 3D objects and export them as a fbx binary. You many n
 ### Create your base 3D model 
 
 The base model should have what ever expression you want your avatar to have by default -- when it is not receiving animation information from the depth camera/2D camera or when your face is in a neutral state. 
+
+![neutral face](https://s3-us-west-1.amazonaws.com/highfidelity-public/images/neutral.jpg)
 
 
 So, for example if your base model has it’s mouth open, when you are not smiling or your mouth is closed, your Avatar’s mouth will look open to other Avatars. It will also mean that if you open your mouth, you will be starting from a default open mouth position and your mouth will appear twice as open to other Avatars in Interface. 
@@ -114,54 +116,54 @@ Rename bones, paint weight, and parent any extra 3D object to the armature. If y
 
 Create shapes for the eyes, mouth, brows etc. If you want to create a 1:1 mapping of shapes to map to Faceshifts, you will need to create shapes for:
 
-EyeBlink_L
-EyeBlink_R
-EyeSquint_L
-EyeSquint_R
-EyeDown_L
-EyeDown_R
-EyeIn_L
-EyeIn_R
-EyeOpen_L
-EyeOpen_R
-EyeOut_L
-EyeOut_R
-EyeUp_L
-EyeUp_R
-BrowsD_L
-BrowsD_R
-BrowsU_C
-BrowsU_L
-BrowsU_R
-JawFwd
-JawLeft
-JawOpen
-JawChew
-JawRight
-MouthLeft
-MouthRight
-MouthFrown_L
-MouthFrown_R
-MouthSmile_L
-MouthSmile_R
-MouthDimple_L
-MouthDimple_R
-LipsStretch_L
-LipsStretch_R
-LipsUpperClose
-LipsLowerClose
-LipsUpperUp
-LipsLowerDown
-LipsUpperOpen
-LipsLowerOpen
-LipsFunnel
-LipsPucker
-ChinLowerRaise
-ChinUpperRaise
-Sneer
-Puff
-CheekSquint_L
-CheekSquint_R
+* EyeBlink_L
+* EyeBlink_R
+* EyeSquint_L
+* EyeSquint_R
+* EyeDown_L
+* EyeDown_R
+* EyeIn_L
+* EyeIn_R
+* EyeOpen_L
+* EyeOpen_R
+* EyeOut_L
+* EyeOut_R
+* EyeUp_L
+* EyeUp_R
+* BrowsD_L
+* BrowsD_R
+* BrowsU_C
+* BrowsU_L
+* BrowsU_R
+* JawFwd
+* JawLeft
+* JawOpen
+* JawChew
+* JawRight
+* MouthLeft
+* MouthRight
+* MouthFrown_L
+* MouthFrown_R
+* MouthSmile_L
+* MouthSmile_R
+* MouthDimple_L
+* MouthDimple_R
+* LipsStretch_L
+* LipsStretch_R
+* LipsUpperClose
+* LipsLowerClose
+* LipsUpperUp
+* LipsLowerDown
+* LipsUpperOpen
+* LipsLowerOpen
+* LipsFunnel
+* LipsPucker
+* ChinLowerRaise
+* ChinUpperRaise
+* Sneer
+* Puff
+* CheekSquint_L
+* CheekSquint_R
 
 For a reference image of how these shapes should look, launch Faceshift studio, click the Training tab, click File/New Profile. On the left side of the window you will see all 48 shapes listed. Select one and the default model to the lists’ right will animate the desired modification for the blendshape.
 
