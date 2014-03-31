@@ -17,5 +17,5 @@ In a few attempts at implementing these 'docked' windows, I've seen an approach 
 
 ## Qt related findings
 
-1. Paraphrasing @ddobrev:
-Docked windows are not supposed to appear outside their parent window  ​(though @Chris7 told me there was no problem on Linux​)​​;the Qt people have promised to fix it for Qt 5.2.2.
+1. Paraphrasing [@ddobrev](https://github.com/ddobrev):
+Docked windows are not supposed to appear outside their parent window  ​(though [@Chris7](https://github.com/Chris7) told me there was no problem on Linux​)​​;the Qt people have promised to fix it for Qt 5.2.2.
