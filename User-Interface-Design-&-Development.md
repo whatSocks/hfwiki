@@ -3,7 +3,7 @@ This document should function as an ever evolving resource around both design ph
 ## General thinking around UI
 We should do everything in our power to reduce stress while using High Fidelity. This should inform color decisions (neutral colors, low contrast -- we probably want to use less black on something like the Import Dialog as it's currently implemented), behavioral decisions when implementing animations, transitions and effects (nothing too abrupt; aim for elegance and subtlety).
 
-Where a vibrant orange is used for the Alpha branding as a subtle warning: this product isn't perfect; it will break. Inside our app, we should aim for a sense of security, peace and honesty.
+Where a vibrant orange is used for the Alpha branding as a subtle warning: this product isn't perfect; it will break. Inside our app, we should aim for a sense of security (you are anonymous, you are safe), peace (nothing abrupt, jarring, abrasive) and honesty (this is what's actually happening 'under the hood').
 
 The behaviour of windows should create feeling of togetherness between each window. A common paradigm in 3D apps is to show a 3D window, and the 2D dialogs atop, where necessary. We should challenge this, seeking out a solution that create a connection between 2D and 3D elements, rather than a hard separation.
 
