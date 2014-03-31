@@ -1,3 +1,5 @@
+This document should function as an ever evolving resource around both design philosophy as it relates to UI, and development tips for our distributed UI development team.
+
 ## General thinking around UI
 We should do everything in our power to reduce stress while using High Fidelity. This should inform color decisions (neutral colors, low contrast -- we probably want to use less black on something like the Import Dialog as it's currently implemented), behavioral decisions when implementing animations, transitions and effects (nothing too abrupt; aim for elegance and subtlety).
 
