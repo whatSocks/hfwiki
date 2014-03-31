@@ -1,7 +1,7 @@
 This document should function as an ever evolving resource around both design philosophy as it relates to UI, and development tips for our distributed UI development team.
 
 ## General thinking around UI
-We should do everything in our power to reduce stress while using High Fidelity. This should inform color decisions (neutral colors, low contrast -- we probably want to use less black on something like the Import Dialog as it's currently implemented), behavioral decisions when implementing animations, transitions and effects (nothing too abrupt; aim for elegance and subtlety).
+We should do everything in our power to reduce stress while using High Fidelity. This should inform color decisions (neutral colors, low contrast -- we probably want to use less black in the Import dialog), behavioral decisions when implementing animations, transitions and effects (nothing too abrupt; aim for elegance and subtlety).
 
 Where a vibrant orange is used for the Alpha branding as a subtle warning: this product isn't perfect; it will break. Inside our app, we should aim for a sense of security (you are anonymous, you are safe), peace (nothing abrupt, jarring, abrasive) and honesty (this is what's actually happening 'under the hood').
 
