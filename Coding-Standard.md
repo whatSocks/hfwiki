@@ -193,7 +193,7 @@ Include guards should be in the following format: hifi_$BASENAME_h.
     
     ...
     
-    #endif // _hifi_VoxelAgentData_h
+    #endif // hifi_VoxelAgentData_h
 
 ####2.2.2. Include statements should be sorted and grouped. Sorted by their hierarchical position in the system with low level files included first. Leave an empty line between groups of include statements.
     #include <fstream>
