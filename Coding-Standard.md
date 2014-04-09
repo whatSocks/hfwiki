@@ -186,12 +186,13 @@ Align the new line with the beginning of the expression on the previous line.
 ##2.2 Include Files and Include Statements
 
 ####2.2.1. Header files must contain an include guard.
-    #ifndef __hifi__VoxelAgentData__
-    #define __hifi__VoxelAgentData__
+Include guards should be in the following format: hifi_$BASENAME_h.
+    #ifndef hifi_VoxelAgentData_h
+    #define hifi_VoxelAgentData_h
     
     ...
     
-    #endif /* defined(__hifi__VoxelAgentData__) */
+    #endif // _hifi_VoxelAgentData_h
 
 ####2.2.2. Include statements should be sorted and grouped. Sorted by their hierarchical position in the system with low level files included first. Leave an empty line between groups of include statements.
     #include <fstream>
