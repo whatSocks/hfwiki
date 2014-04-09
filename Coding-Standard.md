@@ -496,6 +496,22 @@ There should be a space between the "//" and the actual comment
         crosbyInjury();
     }
 
+####4.3.4 Source files (header and implementation) must include a boilerplate.
+Boilerplates should include the filename, location, creator, copyright, and Apache 2.0 License information and be placed at the top of the file.
+
+//
+//  NodeList.h
+//  libraries/shared/src
+//
+//  Created by Stephen Birarda on 2/15/13.
+//  Copyright 2013 High Fidelity, Inc.
+//
+//  This is where you could place an optional one line comment about the file.
+//
+//  Distributed under the Apache License, Version 2.0.
+//  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
+//
+
 ##5. New rules to include
 Other rules we’ve discussed....
 
