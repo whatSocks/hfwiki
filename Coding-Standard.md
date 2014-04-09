@@ -187,6 +187,7 @@ Align the new line with the beginning of the expression on the previous line.
 
 ####2.2.1. Header files must contain an include guard.
 Include guards should be in the following format: hifi_$BASENAME_h.
+
     #ifndef hifi_VoxelAgentData_h
     #define hifi_VoxelAgentData_h
     
