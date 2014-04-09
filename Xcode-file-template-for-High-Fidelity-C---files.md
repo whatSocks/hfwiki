@@ -9,7 +9,7 @@ As per the guide linked above, that folder should be placed in `
 
 With that folder in the right place, the next time you restart Xcode you should have a new category when you go to create a new file.
 
-[Xcode New File Dialog](http://i.imgur.com/qrj8yjk.png)
+![Xcode New File Dialog](http://i.imgur.com/qrj8yjk.png)
 
 By selecting this type you will get a *.cpp and a *.h file with the name of your choosing that has boilerplates and include guards mostly pre-populated. 
 
