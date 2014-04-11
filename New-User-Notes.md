@@ -1,5 +1,9 @@
 _A collection of notes for new users_
 
+# Basic Features
+## Snapshots
+Use Command-S or Control-S to take a Snapshot, it will save to _Users>Username>Library>Application Support>Interface_ on Mac.
+
 # Basic Setup
 ## OS X: Revealing the Library directory
 Snapshots and Logs are saved to _Users>Username>Library>Application Support>Interface_
