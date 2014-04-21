@@ -12,3 +12,4 @@ The following are a set of load and scaling tests that should be run against the
 
 * **domain-server restart while burst connect/disconnect** - run several assignment client instances with testingVoxelViewerRestart.js, then while clients are connecting/disconnecting stop or restart the domain-server. Since the domain-server is shutting down, the voxel-server will lose it's assignment (no domain-server means no assignment). The voxel-server should detect this case and gracefully shutdown. You should see the server properly shut down all of it's sending threads, then shutdown, then wait for a new assignment. Restarting the domain-server should see the voxel-server restart, and begin serving content to the assignment-clients.
 
+* **Voxel-server restart while loading SVO file** - Using the domain-server status page, "restart" the voxel-server, while it's still loading the persistent file.
