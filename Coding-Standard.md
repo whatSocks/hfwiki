@@ -414,7 +414,7 @@ If the number does not have an obvious meaning by itself, the readability is enh
 ##4.2 White space
 ####4.2.1. Conventional operators should be surrounded by a space character. 
     potential = (age + skill) * injuryChance; 
-    // NOT: potential = (age + skill) * injuryChance;
+    // NOT: potential = (age+skill)*injuryChance;
 
 #####4.2.2. C++ reserved words should be followed by a white space. 
     while (true)   
