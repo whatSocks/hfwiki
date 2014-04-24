@@ -10,6 +10,9 @@ Snapshots and Logs are saved to _Users>Username>Library>Application Support>Inte
 
 Recent versions of OSX hide the Library directory/folder by default, and it must be enabled through the Terminal with this command: `"chflags nohidden ~/Library/“`
 
+If you prefer a less permanent way to go to the User Library folder:
+Finder --> Go --> press the Alt key --> then you can select the Library folder
+
 ## OS X: Setting up FaceShift
 1. Load fsHighFidelity
 2. If multiple sensor drivers are available, choose Openni 2.0 Sensor Plugin. 
