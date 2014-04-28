@@ -8,7 +8,7 @@ Use Command-S or Control-S to take a Snapshot, it will save to _Users>Username>L
 * Use '0' to create a voxel
 * To see all the scripts that are running go to File>Running Scipts . To add additional scripts or run your own, go [here](https://alphas.highfidelity.io/t/fun-and-useful-js-scripts/154) to learn more. 
 * If you create a Voxel and want to undo use Ctrl+Z
-* A great location to learn how to build and not worry about making any mistakes is on the Sandbox. To get there type @ then sandbox
+* A great location to learn how to build and not worry about making any mistakes is on the Sandbox. To get there type '@' then 'sandbox'
 * To bring up the text chat window click 'enter' to close click 'esc'
 
 # Basic Setup
