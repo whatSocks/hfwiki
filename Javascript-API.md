@@ -52,6 +52,8 @@ Functions:
 Voxels are the space filling 'blocks' consisting of colors and other meta-values that you see around you in the virtual world.  Voxels can be created, deleted, and changed by interactive programs.  
 
 * VoxelDetail getVoxelAt(float x, float y, float z, float scale)
+
+_"Voxels.getVoxelAt(0, 0, 0, 1.0).red" would return the value of red from the voxel at the coordinates 0,0,0._
 * void setVoxelNonDestructive(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
 * void setVoxel(float x, float y, float z, float scale, uchar red, uchar green, uchar blue)
 * void eraseVoxel(float x, float y, float z, float scale)
