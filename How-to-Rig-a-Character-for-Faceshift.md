@@ -1,8 +1,8 @@
 1. Open the character rig in Maya
 1. Remove any non-FBX compliant geo (in this case, nurbs eyes)
 1. Sculpt the blendshapes
-1. 1. Use the vertex points and sculpt tools to sculpt the shapes
-1. 1. Sculpt the head, eyebrows and mustache separately
+1. Use the vertex points and sculpt tools to sculpt the shapes
+1. Sculpt the head, eyebrows and mustache separately
 1. Rig the blendshapes
 1. Select the head target then base and create the blendshape
 1. Select the eyebrow targets then base and create the blendshape.
