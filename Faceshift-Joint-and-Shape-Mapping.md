@@ -1,4 +1,4 @@
-### # .fst File
+### .fst File
 * Stores the mapping the Faceshift rig and FBX rig.
 * Located at /Documents/faceshift/targets
 
