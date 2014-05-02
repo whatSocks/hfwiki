@@ -1,4 +1,4 @@
-### Avatar Docs
+**Avatar Docs**
 
 * [Exporting your Rigged Avatar from Faceshift](https://github.com/highfidelity/hifi/wiki/Exporting-Your-Rigged-Avatar-From-Faceshift)
 * [Creating Blendshapes for your Avatar](https://github.com/highfidelity/hifi/wiki/Creating-Blendshapes-for-your-Avatar)
