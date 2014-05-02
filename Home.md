@@ -10,5 +10,6 @@
 * [Faceshift Joint and Shape Mapping](https://github.com/highfidelity/hifi/wiki/Faceshift-Joint-and-Shape-Mapping)
 
 **MAYA DOCS**
+
 [Maya Script to Split Blenshapes](https://github.com/highfidelity/hifi/wiki/Maya-Script-to-Split-Blenshapes)
 
