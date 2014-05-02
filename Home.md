@@ -4,4 +4,5 @@
 * [Creating Blendshapes for your Avatar](https://github.com/highfidelity/hifi/wiki/Creating-Blendshapes-for-your-Avatar)
 * [How to Rig a Character for Faceshift](https://github.com/highfidelity/hifi/wiki/How-to-Rig-a-Character-for-Faceshift)
 * [Naming your Skeletal Joints](https://github.com/highfidelity/hifi/wiki/Naming-Your-Skeletal-Joints)
+* [The FST File](https://github.com/highfidelity/hifi/wiki/The-FST-file)
 
