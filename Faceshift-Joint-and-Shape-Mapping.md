@@ -2,20 +2,20 @@
 * Stores the mapping the Faceshift rig and FBX rig.
 * Located at /Documents/faceshift/targets
 
-# faceshift target mapping file
+### faceshift target mapping file
 * name= [The name of the FBX file]
 * filename=[The path the FBX file]
 * texdir=[The path to the texture directory]
 * scale=[The scale of the model (depends on source model)]
 * Default rotational and translation information are set = 0 (e.g. rx=0...tx=0...)
 
-# Joints 
+### Joints 
 * jointEyeLeft = jointEyeLeft = 1
 * jointEyeRight = jointEyeRight = 1
 * jointNeck = jointNeck = 1 (maps to the neck joint at base of head)
 * Note: JointNeckRoot is mapped by default and corresponds to base of neck
 
-# Blendshapes
+### Blendshapes
 * EyeBlink_L = Shapes.EyeBlink_L = 1
 * EyeBlink_R = Shapes.EyeBlink_R = 1
 * EyeSquint_L = Shapes.EyeSquint_L = 1
