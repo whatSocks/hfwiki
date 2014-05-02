@@ -6,4 +6,5 @@
 * [Naming your Skeletal Joints](https://github.com/highfidelity/hifi/wiki/Naming-Your-Skeletal-Joints)
 * [The FST File](https://github.com/highfidelity/hifi/wiki/The-FST-file)
 * [Training in Faceshift](https://github.com/highfidelity/hifi/wiki/Training-in-Faceshift)
+* [Uploading your Models](https://github.com/highfidelity/hifi/wiki/Uploading-Your-Models)
 
