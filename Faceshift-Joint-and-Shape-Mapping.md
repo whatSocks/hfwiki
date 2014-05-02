@@ -1,12 +1,12 @@
 ### .fst File
-* Stores the mapping the Faceshift rig and FBX rig.
-* Located at /Documents/faceshift/targets
+* Stores the mapping the **Faceshift** rig and **FBX** rig.
+* Located at **/Documents/faceshift/targets**
 
 ### faceshift target mapping file
-* name= [The name of the FBX file]
-* filename=[The path the FBX file]
-* texdir=[The path to the texture directory]
-* scale=[The scale of the model (depends on source model)]
+* name= [The **name** of the FBX file]
+* filename=[The **path** the FBX file]
+* texdir=[The **path** to the texture directory]
+* scale=[The **scale** of the model (depends on source model)]
 * Default rotational and translation information are set = 0 (e.g. rx=0...tx=0...)
 
 ### Joints 
