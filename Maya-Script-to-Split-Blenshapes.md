@@ -1,3 +1,4 @@
+```
 # Made by Jeff Rosenthal
 # JeffRosenthal.org
 # 8/1/2012
@@ -84,3 +85,4 @@ for target in ([targetObj_Lft, targetObj_Rgt]):
         cmds.xform(target + '.vtx[' + str(i) + ']', rt=(differencePos[0] * falloff, differencePos[1] * falloff, differencePos[2] * falloff))
 
 cmds.select(cl=True)
+```
