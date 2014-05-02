@@ -7,5 +7,5 @@
 * [The FST File](https://github.com/highfidelity/hifi/wiki/The-FST-file)
 * [Training in Faceshift](https://github.com/highfidelity/hifi/wiki/Training-in-Faceshift)
 * [Uploading your Models](https://github.com/highfidelity/hifi/wiki/Uploading-Your-Models)
-[Faceshift Joint and Shape Mapping](https://github.com/highfidelity/hifi/wiki/Faceshift-Joint-and-Shape-Mapping)
+* [Faceshift Joint and Shape Mapping](https://github.com/highfidelity/hifi/wiki/Faceshift-Joint-and-Shape-Mapping)
 
