@@ -85,7 +85,8 @@ Quaternion and Vector functions are included in the javascript API to make it ea
 
 Quaternion functions:
 * quat Quat.multiply(const glm::quat& q1, const glm::quat& q2);
-* Quat.fromVec3(const glm::vec3& vec3);
+* Quat.fromVec3Degrees(const glm::vec3& vec3);
+* Quat.fromVec3Radians(const glm::vec3& vec3);
 * quat Quat.fromPitchYawRoll(float pitch, float yaw, float roll);
 * quat inverse(const glm::quat& q);
 * vec3 getFront(const glm::quat& orientation);
