@@ -3,7 +3,7 @@ High Fidelity uses Javascript as the language for scriptable in-world objects, a
 # Avatar  
 If you are running on the interface client, the 'Avatar' is you, and is called 'MyAvatar'.  If you are running an assignment that is not on an interactive client, the avatar object is called 'Avatar'.  
 
-## Properties
+### Properties:
 
 * Vec3 MyAvatar.position 
 * float MyAvatar.scale 
@@ -28,7 +28,7 @@ If you are running on the interface client, the 'Avatar' is you, and is called '
 * Vec3 MyAvatar.gravity
 
 
-## Functions:
+### Functions:
 
 * Vec3 MyAvatar.getTargetAvatarPosition()
 The position of the avatar that you are looking at.
@@ -44,7 +44,7 @@ The position of the avatar that you are looking at.
 * MyAvatar.updateMotionBehaviorsFromMenu()
 
 
-## Callback Functions:
+### Callback Functions:
 
 * MyAvatar.collisionWithAvatar(string myUUID, string theirUUID, object collisionInfo)
 
@@ -80,11 +80,11 @@ Note that right now, joint positions are updated every frame whenever they are m
 # Particles
 Particles are moving/moveable objects that are stored in an octree server and transmitted to clients and interactive agents that are near enough to see them.  Particles can have model files attached to them, changing their appearance.  
  
-Callback Functions: 
+### Callback Functions: 
 * particleCollisionWithVoxel(ParticleID particleID, VoxelDetail voxel);
 * particleCollisionWithParticle(ParticleID idA, ParticleID idB);
 
-Functions:
+### Functions:
 * ParticleID addParticle(ParticleProperties properties)
 * ParticleID identifyParticle(ParticleID particleID)
 * ParticleProperties getParticleProperties(ParticleID particleID)
@@ -114,6 +114,7 @@ Functions:
 # Voxels 
 Voxels are the space filling 'blocks' consisting of colors and other meta-values that you see around you in the virtual world.  Voxels can be created, deleted, and changed by interactive programs.  
 
+### Functions:
 * number getTreeScale() provide the world scale
 * VoxelDetail getVoxelAt(float x, float y, float z, float scale) checks the local voxel tree for a voxel at the specified location and scale
 
@@ -148,7 +149,7 @@ _"Voxels.getVoxelAt(0, 0, 0, 1.0).red" would return the value of red from the vo
 # Clipboard functions for Voxels 
 Clipboard.
 
-Functions:
+### Functions:
 
 * cutVoxel(VoxelDetail sourceVoxel);
 * cutVoxel(float x, float y, float z, float s);
@@ -164,7 +165,7 @@ Functions:
 * nudgeVoxel(VoxelDetail sourceVoxel, vec3 nudgeVec);
 * nudgeVoxel(float x, float y, float z, float s, vec3 nudgeVec);
 
-Callback Functions:
+### Callback Functions:
 
 * readyToImport()
 
@@ -298,7 +299,7 @@ Functions:
 * innerWidth
 * innerHeight
 
-Functions:
+### Functions:
 * alert(string message)
 * alert()
 * confirm(string message)
@@ -313,17 +314,17 @@ Functions:
 
 # Settings
 
-Functions:
+### Functions:
 * getValue(string setting)
 * getValue(string setting, string defaultValue)
 * setValue(string setting, string value)
 
 # Menu
 
-Callback Functions:
+### Callback Functions:
 * menuItemEvent(string menuItem)
 
-Functions:
+### Functions:
 * addMenu(string menuName)
 * removeMenu(string menuName)
 * addSeparator(string menuName, string separatorName)
@@ -343,12 +344,12 @@ NOTE: location without capital L
 * hostname
 * pathname
 
-Functions:
+### Functions:
 * assign(string url)
 
 # AudioDevice
 
-Functions:
+### Functions:
 * setInputDevice(string deviceName)
 * setOutputDevice(string deviceName)
 * string getInputDevice()
