@@ -3,4 +3,5 @@ Currently the following domains are available for visiting:
 * [alpha.highfidelity.io](hifi://alpha.highfidelity.io/0,0,0/0,0,0) High Fidelity Inc. Alpha domain - For the alpha testers
 * [thoys.nl](hifi://thoys/0,0,0/0,0,0) Thoys' domain - Theres a castle here
 * [home.hagale.net](hifi://home.hagale.net/0,0,0/0,0,0) Tony's domain - Nothing much here, yet.
+* [bits.holoshed.com](hifi://bits.holoshed.com/0,0,0/0,0,0) Coal's server running on CentOS, currently empty
 * add yours here...
