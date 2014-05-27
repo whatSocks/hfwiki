@@ -11,6 +11,9 @@ Use Command-S or Control-S to take a Snapshot, it will save to _Users>Username>L
 * A great location to learn how to build and not worry about making any mistakes is on the Sandbox. To get there type '@' then 'sandbox'
 * To bring up the text chat window click 'enter' to close click 'esc'
 
+## Useful software
+* A great free tool for converting dae, obj, 3ds, dxf to FBX [FBX Converter](http://usa.autodesk.com/adsk/servlet/pc/item?siteID=123112&id=20481519)
+
 # Basic Setup
 ## OS X: Revealing the Library directory
 Snapshots and Logs are saved to _Users>Username>Library>Application Support>Interface_
