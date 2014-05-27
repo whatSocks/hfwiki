@@ -1,3 +1,10 @@
+**USER DOCS**
+
+* [New User Notes](https://github.com/highfidelity/hifi/wiki/New-User-Notes)
+* [FAQ's](https://github.com/highfidelity/hifi/wiki/Frequently-Asked-Questions-(FAQ))
+* [Known domains to visit](https://github.com/highfidelity/hifi/wiki/Domains)
+* [Running Local Servers](https://github.com/highfidelity/hifi/wiki/Running-Local-Servers)
+
 **AVATAR DOCS**
 
 * [Exporting your Rigged Avatar from Faceshift](https://github.com/highfidelity/hifi/wiki/Exporting-Your-Rigged-Avatar-From-Faceshift)
