@@ -188,6 +188,7 @@ Audio is continuously mixed in 3D and re-transmitted to interactive clients by t
 
 * Vec3 position
 * float volume
+* bool loop
 
 ### AudioInjector
 
