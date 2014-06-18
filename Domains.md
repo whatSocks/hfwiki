@@ -5,4 +5,5 @@ Currently the following domains are available for visiting:
 * [thoys.nl](hifi://thoys/0,0,0/0,0,0) Thoys' domain - Theres a castle here
 * [home.hagale.net](hifi://home.hagale.net/0,0,0/0,0,0) Tony's domain - Nothing much here, yet.
 * [bits.holoshed.com](hifi://bits.holoshed.com/0,0,0/0,0,0) Coal's server running on CentOS, currently empty
+* [www.fearlessmysteries.eu](hifi://www.fearlessmysteries.eu/0,0,0/0,0,0) Fearghus' server running on CentOS
 * add yours here...
