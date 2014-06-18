@@ -91,6 +91,14 @@ gmake
 gmake install
 ```
 
+Make sure the libraries and QT are available:
+```
+Folder where QT stuff ends up if following previous instructions:
+export QT_CMAKE_PREFIX_PATH=/usr/lib/cmake/
+Make sure that the libraries can be found:
+export LD_LIBRARY_PATH=/usr/lib
+```
+
 Prepare to build HIFI from source:
 ```bash
 cd /usr/src
