@@ -21,7 +21,7 @@ apt-get install build-essential
 
 3) Install dependencies (big long list just paste it in):
 ```bash
-apt-get install openssl libssl-dev ruby perl perf git gperf texinfo libxcb1 libxcb1-dev xcb xcb-proto  libx11-6 libx11-dev libx11-xcb1 libx11-xcb-dev libxrender-dev libicu-dev libxslt1-dev libxext-dev libxmu-dev libxmu-headers libxt-dev libxi-dev libsdl2-dev libgmp10 libgmp-dev zlib1g zlib1g-dev mesa-common-dev libgl1-mesa-dev m4 qtbase5-dev qtbase5-dev-tools
+apt-get install openssl libssl-dev ruby perl perf git gperf texinfo libxcb1 libxcb1-dev xcb xcb-proto  libx11-6 libx11-dev libx11-xcb1 libx11-xcb-dev libxrender-dev libicu-dev libxslt1-dev libxext-dev libxmu-dev libxmu-headers libxt-dev libxi-dev libsdl2-dev libgmp10 libgmp-dev zlib1g zlib1g-dev mesa-common-dev libgl1-mesa-dev m4 qtbase5-dev qtbase5-dev-tools qtscript5-dev qttools5-dev qtmultimedia5-dev libqt5svg5-dev libqt5webkit5-dev
 ```
 
 Install CMake Manually from source:
