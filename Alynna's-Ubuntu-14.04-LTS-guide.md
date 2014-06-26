@@ -1,6 +1,11 @@
-### Totally based on: Coal's CentOS 6.5 Domain-Server and Assignment-Client Compile Guide
+#### Totally based on: Coal's CentOS 6.5 Domain-Server and Assignment-Client Compile Guide
 
 ## Warning: Currently in progress
+
+0) Add Ubuntu's QT5 PPA.  It will save us a long compile later.
+```bash
+apt-add-repository ppa:ubuntu-sdk-team/ppa
+```
 
 1) First make sure that you have the universe repository in /etc/apt/sources.list, then get current:
 ```bash
@@ -71,18 +76,6 @@ rm -rf freeglut-2.8.1.tar.gz
 cd freeglut-2.8.1
 ./configure --prefix=/usr/
 make && make install
-```
-
-Install QT from source:
-```bash
-cd /usr/src
-wget http://download.qt-project.org/official_releases/qt/5.2/5.2.1/single/qt-everywhere-opensource-src-5.2.1.tar.gz
-tar -vxf qt-everywhere-opensource-src-5.2.1.tar.gz
-rm -f qt-everywhere-opensource-src-5.2.1.tar.gz
-cd qt-everywhere-opensource-src-5.2.1
-./configure --prefix=/usr/ -opensource -openssl -nomake examples -nomake tests
-gmake
-gmake install
 ```
 
 Make sure the libraries and QT are available:
