@@ -1,5 +1,7 @@
 ### Totally based on: Coal's CentOS 6.5 Domain-Server and Assignment-Client Compile Guide
 
+## Warning: Currently in progress
+
 1) First make sure that you have the universe repository in /etc/apt/sources.list, then get current:
 ```bash
 apt-get update
@@ -24,8 +26,8 @@ tar xvfz cmake-2.8.12.2.tar.gz
 rm -rf cmake-2.8.12.2.tar.gz
 cd cmake-2.8.12.2
 ./configure
-gmake
-gmake install
+make
+make install
 ```
 
 Install GLM from source:
