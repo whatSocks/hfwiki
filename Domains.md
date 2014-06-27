@@ -9,3 +9,5 @@ Currently the following domains are available for visiting:
 * [kevintown.net](hifi://kevintown.net/0,0,0/0,0,0) Kevin's Domain (Washington, D.C.)
 * [gyre.fabulo.us](hifi://gyre.fabulo.us/1000,1000,1000) mthome(Vex)'s domain running on Ubuntu - likely to be a mess.
 * add yours here...
+
+Note [URL Syntax](https://github.com/highfidelity/hifi/wiki/URL-Syntax)
