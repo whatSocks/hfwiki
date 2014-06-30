@@ -8,6 +8,7 @@ Currently the following domains are available for visiting:
 * [www.fearlessmysteries.eu](hifi://www.fearlessmysteries.eu/0,0,0/0,0,0) Fearghus' server running on CentOS
 * [kevintown.net](hifi://kevintown.net/0,0,0/0,0,0) Kevin's Domain (Washington, D.C.)
 * [gyre.fabulo.us](hifi://gyre.fabulo.us/1000,1000,1000) mthome(Vex)'s domain running on Ubuntu - likely to be a mess.
+* [genesis.hyperkids.org](hifi://genesis.hyperkids.org/0,0,0/0,0,0) Sean's sandbox - Debian Wheezy (_hic sunt dracones_).
 * add yours here...
 
 Note [URL Syntax](https://github.com/highfidelity/hifi/wiki/URL-Syntax)
