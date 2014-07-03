@@ -4,6 +4,7 @@
 * [FAQ's](https://github.com/highfidelity/hifi/wiki/Frequently-Asked-Questions-(FAQ))
 * [Known domains to visit](https://github.com/highfidelity/hifi/wiki/Domains)
 * [Running Local Servers](https://github.com/highfidelity/hifi/wiki/Running-Local-Servers)
+* [Javascript API](https://github.com/highfidelity/hifi/wiki/Javascript-API)
 
 **AVATAR DOCS**
 
