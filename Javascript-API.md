@@ -254,17 +254,11 @@ Addressable as Camera.foo():
 * setOrientation(quat) 
 * quat getOrientation() 
 
-// The following only work on independent cameras
-// one time change to what the camera is looking at
-* lookAt(vec3)
-// fix what the camera is looking at, and keep the camera looking at this even if position changes
-* keepLookingAt(vec3)
-// stops the keep looking at feature, doesn't change what's being looked at, but will stop camera from
-// continuing to update it's orientation to keep looking at the item
-* void stopLooking() 
-
-// Pick ray for point on screen
-* PickRay computePickRay(x, y)
+The following only work on independent cameras.
+* lookAt(vec3) One time change to what the camera is looking at.
+* keepLookingAt(vec3) Fix what the camera is looking at, and keep the camera looking at this even if position changes.
+* void stopLooking() Stops the keep looking at feature, doesn't change what's being looked at, but will stop camera from continuing to update its orientation to keep looking at the item.
+* PickRay computePickRay(x, y) Pick ray for point on screen
 
 # Mouse, Keyboard and 3D Motion Controllers 
 The mouse as well as 3D controllers like the Razer Hydra can be accessed from these functions. 
