@@ -460,8 +460,13 @@ Examples of acceptable form are:
 ####4.2.4. Semicolons in for statments should be followed by a space character.
     for (i = 0; i < 10; i++) {  // NOT: for(i=0;i<10;i++){
 
-####4.2.5. Method names should not be followed by a white space
-    setCaptain(ovechkin); // NOT: setCaptain (ovechkin);
+####4.2.5. Declaring and Calling Functions
+* Function names  should not be followed by a white space.
+* And there should be no space between the open parenthesis and the first parameter, and no space between the last parameter and the close parenthesis.
+
+    setCaptain(ovechkin); 
+    // NOT: setCaptain(ovechkin);
+    // NOT: doSomething( int foo, float bar );
 
 ####4.2.6.  Logical units within a block should be separated by one blank line.
     Team penguins = new Team();
