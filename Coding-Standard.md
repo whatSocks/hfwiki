@@ -464,6 +464,7 @@ Examples of acceptable form are:
 * Function names  should not be followed by a white space.
 * And there should be no space between the open parenthesis and the first parameter, and no space between the last parameter and the close parenthesis.
 
+Examples:
     setCaptain(ovechkin); 
     // NOT: setCaptain(ovechkin);
     // NOT: doSomething( int foo, float bar );
