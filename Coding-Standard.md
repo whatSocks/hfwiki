@@ -389,7 +389,34 @@ If the number does not have an obvious meaning by itself, the readability is enh
        skate();
     } while (!tired)
 
-####4.1.9. A switch statement should have the following form:
+####4.1.9. A switch statements should follow the following basic formatting rules. The case statements are indented one indent (4 spaces) from the switch. The code for each case should be indented one indent (4 spaces) from the case statement. Each separate case should have a break statement, unless it is explicitly intended for the case to fall through to the subsequent cases. In the event that a case statement executes some code, then falls through to the next case, include an explicit comment noting that this is intentional. Break statements should be aligned with the code of the case, e.g. indented 4 spaces from the case statement. In the event that brackets are required to create local scope, the open bracket should appear on the same line as the case, and the close bracket should appear on the line immediately following the break aligned with the case statement.
+
+Examples of acceptable form are:
+
+    switch (foo) {
+        case BAR:
+            doBar();
+            break;
+
+        // notice brackets below follow the standard bracket placement for other control structures
+        case SPAM: {
+            int spam = 0;
+            doSomethingElse(spam);
+            break;
+        }
+
+        case SPAZZ:
+        case BAZZ:
+            doSomething();
+            // fall through to next case
+
+        case RAZZ:
+        default:
+            doSomethingElseEntirely();
+            break;
+    }
+
+    // or in cases where returns occur at each case, this form is also accpetable
     switch (jerseyNumber) {
         case 87 :
             return crosby;
