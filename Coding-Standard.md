@@ -389,7 +389,13 @@ If the number does not have an obvious meaning by itself, the readability is enh
        skate();
     } while (!tired)
 
-####4.1.9. A switch statements should follow the following basic formatting rules. The case statements are indented one indent (4 spaces) from the switch. The code for each case should be indented one indent (4 spaces) from the case statement. Each separate case should have a break statement, unless it is explicitly intended for the case to fall through to the subsequent cases. In the event that a case statement executes some code, then falls through to the next case, include an explicit comment noting that this is intentional. Break statements should be aligned with the code of the case, e.g. indented 4 spaces from the case statement. In the event that brackets are required to create local scope, the open bracket should appear on the same line as the case, and the close bracket should appear on the line immediately following the break aligned with the case statement.
+####4.1.9. Switch/Case Statements:
+A switch statements should follow the following basic formatting rules: 
+* The case statements are indented one indent (4 spaces) from the switch. 
+* The code for each case should be indented one indent (4 spaces) from the case statement. 
+* Each separate case should have a break statement, unless it is explicitly intended for the case to fall through to the subsequent cases. In the event that a case statement executes some code, then falls through to the next case, you must include an explicit comment noting that this is intentional. 
+* Break statements should be aligned with the code of the case, e.g. indented 4 spaces from the case statement.
+* In the event that brackets are required to create local scope, the open bracket should appear on the same line as the case, and the close bracket should appear on the line immediately following the break aligned with the case statement.
 
 Examples of acceptable form are:
 
