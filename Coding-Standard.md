@@ -59,7 +59,7 @@ These will be discernible from class private variables since they are not prefix
     stick.setFlex(flex);
 
 ####1.2.2. The term compute can be used in methods where something is computed.  
-    team->computerPowerPlayPercentage();    
+    team->computePowerPlayPercentage();    
     player->computePointsPerGame();
 Give the reader the immediate clue that this is a potentially time-consuming operation, and if used repeatedly, he might consider caching the result. Consistent use of the term enhances readability.
 
@@ -127,7 +127,7 @@ This is done to avoid double negatives when used in conjunction with the logical
 ####1.2.16.  Exception classes should be suffixed with Exception.
     class GoalException {
       ...
-    }
+    };
 
 <a name="files"/>
 #2. Files
@@ -147,8 +147,8 @@ This is done to avoid double negatives when used in conjunction with the logical
         } 
 
         // simple getters/setters should appear in the header file
-        int getRadius() const { return _radius; };
-        void setRadius(int radius) { _radius = radius; };
+        int getRadius() const { return _radius; }
+        void setRadius(int radius) { _radius = radius; }
         ...
     private:
         int _radius;
@@ -229,7 +229,7 @@ http://stackoverflow.com/questions/1609163/what-is-the-difference-between-static
 #####3.1.3 Use of *const*
 #####3.1.3.1 Use const types for variables, parameters, return types, and methods whenever possible
     void exampleBarAndFoo(const Bar& bar, const char* foo); // doesn't modify bar and foo, use const types
-    void ClassBar::spam() const { }; // doesn't modify instance of ClassBar, use const method
+    void ClassBar::spam() const { } // doesn't modify instance of ClassBar, use const method
 
 <a name="constplacement"/>
 #####3.1.3.2 Place the const keyword before the type
@@ -390,7 +390,7 @@ const float LARGEST_VALUE = 10000.0f;
         ...
     private:
         ...
-    }
+    };
 
 ####4.1.4.  Method definitions should have the following form:
     void goalCelebration() {
@@ -429,7 +429,7 @@ const float LARGEST_VALUE = 10000.0f;
 ####4.1.8. A do-while statement should have the following form:
     do {
        skate();
-    } while (!tired)
+    } while (!tired);
 
 ####4.1.9. Switch/Case Statements:
 A switch statements should follow the following basic formatting rules: 
@@ -480,7 +480,7 @@ Examples of acceptable form are:
     try {
         tradePlayer();
     }
-    catch (NoTradeClauseException& exception) {
+    catch (const NoTradeClauseException& exception) {
         negotiateNoTradeClause();
     }
 
