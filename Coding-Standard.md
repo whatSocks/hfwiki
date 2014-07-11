@@ -264,11 +264,13 @@ One exception to this rule is when the class is essentially a data structure, wi
 Note that structs are kept in C++ for compatibility with C only, and avoiding them increases the readability of the code by reducing the number of constructs used. Use a class instead.
 
 ####3.2.4. C++ pointers and references should have their reference symbol next to the type rather than to the name.
+
     float* savePercentages; 
     // NOT: float *savePercentages; or float * savePercentages; 
 
-    int& numCups = ...;   
-    // NOT: int &numCups = ...; or int & numCups = ...;
+    void checkCups(int& numCups);
+    // NOT: int &numCups or int & numCups 
+
 The pointer-ness or reference-ness of a variable is a property of the type rather than the name.
 Also see [rule 3.1.3.2](#constplacement) regarding placement the const keyword before the type.
 
