@@ -226,6 +226,22 @@ The ordering is "most public first" so people who only wish to use the class can
 For more info about C++ stype casting:
 http://stackoverflow.com/questions/1609163/what-is-the-difference-between-static-cast-and-c-style-casting
 
+#####3.1.3 Use of *const*
+#####3.1.3.1 Use const types for variables, parameters, return types, and methods whenever possible
+    void exampleBarAndFoo(const Bar& bar, const char* foo); // doesn't modify bar and foo, use const types
+    void ClassBar::spam() const { }; // doesn't modify instance of ClassBar, use const method
+
+<a name="constplacement"/>
+#####3.1.3.2 Place the const keyword before the type
+    void foo(const Bar& bar);
+    // NOT: void foo(Bar const& bar);
+    void spam(const Foo* foo);
+    // NOT: void foo(Foo const* foo);
+
+#####3.1.3.4 When implementing a getter for a class that returns a class member that is a complex data type, return a const& to that member.
+    const glm::vec3& AABox::getCorner() const;
+    // NOT: glm::vec3 AABox::getCorner() const;
+
 ##3.2 Variables
 ####3.2.1. Variables should be initialized where they are declared.
 This ensures that variables are valid at any time. 
@@ -254,6 +270,7 @@ Note that structs are kept in C++ for compatibility with C only, and avoiding th
     int& numCups;   
     // NOT: int &numCups; or int & numCups;
 The pointer-ness or reference-ness of a variable is a property of the type rather than the name.
+Also see [rule 3.1.3.2](#constplacement) regarding placement the const keyword before the type.
 
 ####3.2.5.  Implicit test for 0 should not be used other than for boolean variables or non-NULL pointers.
     if (numGoals != 0)  // NOT: if (numGoals)
@@ -307,9 +324,31 @@ Makes sure that the exceptions don't obscure the normal path of execution. This 
 
     // NOT: if (isGoal) lightTheLamp();
 
+####3.4.3. Write the expression of a conditional similar to how you would speak it out loud. 
+    if (someVariable == 0) {
+        doSomething();
+    }
+    // NOT: if (0 == someVariable)
+
 ##3.5 Miscellaneous
-####3.5.1. The use of magic numbers in the code should be avoided. Numbers other than 0 and 1 should be considered declared as named constants instead.
-If the number does not have an obvious meaning by itself, the readability is enhanced by introducing a named constant instead. A different approach is to introduce a method from which the constant can be accessed.
+####3.5.1. Constants and Magic Numbers
+####3.5.1.1 The use of magic numbers in the code should be avoided. 
+* Numbers other than 0 and 1 should be considered declared as named constants instead.
+* If the number does not have an obvious meaning by itself, the readability is enhanced by introducing a named constant instead. 
+* A different approach is to introduce a method from which the constant can be accessed.
+
+####3.5.1.2 Declare constants closest to the scope of their use.
+```
+bool checkValueLimit(int value) {
+    const int ValueLimit = 10; // I only use this constant here, define it here in context
+    return (value > ValueLimit);
+}
+```
+####3.5.1.3 Use const typed variables instead of #define
+```
+const float LARGEST_VALUE = 10000.0f;
+// NOT:  #define LARGEST_VALUE 10000.0f
+```
 
 ####3.5.2. Floating point constants should always be written with decimal point and at least one decimal.
     double stickLength = 0.0;    // NOT:  double stickLength = 0;
@@ -320,6 +359,9 @@ If the number does not have an obvious meaning by itself, the readability is enh
 
 ####3.5.3. Floating point constants should always be written with a digit before the decimal point.
     double penaltyMinutes = 0.5;  // NOT:  double penaltyMinutes = .5;
+
+####3.5.4. When using a single precision float type, include the trailing f.
+    float penaltyMinutes = 0.5f;  // NOT:  float penaltyMinutes = 0.5;
 
 <a name="layout"/>
 #4. Layout and Comments
@@ -566,14 +608,3 @@ These types of comments are explicitly not allowed. If you need to break up sect
 ```
 ##5. New rules to include
 Other rules we’ve discussed....
-
-LHS vs RHS...
-
-// This
-if (someVariable == 0)
-// Not
-if (0 == someVariable)...
-
-consts vs #define
-when/how to use consts vs defines, especial to avoid magic numbers
-format of getters/setters, especially as the relate to “const” methods and references to const members.
