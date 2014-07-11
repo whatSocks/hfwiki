@@ -481,8 +481,7 @@ Examples of acceptable form are:
 ####4.1.10. A try-catch statement should have the following form:
     try {
         tradePlayer();
-    }
-    catch (const NoTradeClauseException& exception) {
+    } catch (const NoTradeClauseException& exception) {
         negotiateNoTradeClause();
     }
 
