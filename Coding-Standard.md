@@ -553,6 +553,17 @@ Boilerplates should include the filename, location, creator, copyright, and Apac
     //  See the accompanying file LICENSE or http://www.apache.org/licenses/LICENSE-2.0.html
     //
 
+####4.3.5 Never include Horizontal "line break" style comment blocks
+
+These types of comments are explicitly not allowed. If you need to break up sections of code, just leave an extra blank line.
+```
+//////////////////////////////////////////////////////////////////////////////////
+
+/********************************************************************************/
+
+//--------------------------------------------------------------------------------
+
+```
 ##5. New rules to include
 Other rules we’ve discussed....
 
