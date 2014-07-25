@@ -26,6 +26,7 @@ apt-get install openssl libssl-dev ruby perl perf git gperf texinfo libxcb1 libx
 
 Install CMake Manually from source:
 ```bash
+cd /usr/src
 wget http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
 tar xvfz cmake-2.8.12.2.tar.gz
 rm -rf cmake-2.8.12.2.tar.gz
@@ -81,7 +82,7 @@ make && make install
 Make sure the libraries and QT are available:
 ```
 Folder where QT stuff ends up if following previous instructions:
-export QT_CMAKE_PREFIX_PATH=/usr/lib/cmake/
+export QT_CMAKE_PREFIX_PATH=/usr/local/share/cmake-2.8/
 Make sure that the libraries can be found:
 export LD_LIBRARY_PATH=/usr/lib
 ```
