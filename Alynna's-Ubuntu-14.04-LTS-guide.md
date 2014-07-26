@@ -81,9 +81,9 @@ make && make install
 
 Make sure the libraries and QT are available:
 ```
-Folder where QT stuff ends up if following previous instructions:
+# Folder where QT stuff ends up if following previous instructions:
 export QT_CMAKE_PREFIX_PATH=/usr/local/share/cmake-2.8/
-Make sure that the libraries can be found:
+# Make sure that the libraries can be found:
 export LD_LIBRARY_PATH=/usr/lib
 ```
 
