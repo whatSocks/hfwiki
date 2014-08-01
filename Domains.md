@@ -10,6 +10,6 @@ Currently the following domains are available for visiting:
 * [gyre.fabulo.us](hifi://gyre.fabulo.us/1000,1000,1000) mthome(Vex)'s domain running on Ubuntu - likely to be a mess.
 * [hifi.hyperkids.org](hifi://hifi.hyperkids.org/0,0,0/0,0,0) Sean's sandbox - Debian Wheezy (_hic sunt dracones_).
 * [adriania.ddns.net](hifi://adriania.ddns.net/0,0,0/0,0,0) Adrians domain (QLD Australia) - A few streets here.
-* add yours here...
+* [center.ddns.net](hifi://center.ddns.net/0,0,0/0,0,0) Johnny Magic's domain (Chiangmai, Thailand) - nothing here yet except flat green space and sky.
 
 Note [URL Syntax](https://github.com/highfidelity/hifi/wiki/URL-Syntax)
