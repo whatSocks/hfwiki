@@ -12,6 +12,6 @@ Currently the following domains are available for visiting:
 * [adriania.ddns.net](hifi://adriania.ddns.net/0,0,0/0,0,0) Adrians domain (QLD Australia) - A few streets here.
 * [center.ddns.net](hifi://center.ddns.net/0,0,0/0,0,0) Johnny's domain (Chiangmai, Thailand) - nothing here yet except flat green space and sky.
 * [hifi.robodolly.com](hifi://hifi.robodolly.com/0,0,0/0,0,0) Judas' domain (UK) - admire Judas' latest inventions
-* [hifi.aiai.ed.ac.uk](hifi://hifi.aiai.ed.ac.uk/10,0,10/0,0,0) Virtual University of Edinburgh (Vue) Test Domain (Ai_Austin, UK) Please report issues, firewall problems, etc to ai.ai.austin@gmail.com
+* [hifi.aiai.ed.ac.uk](hifi://hifi.aiai.ed.ac.uk/10,0,10/0,0,0) Virtual University of Edinburgh (Vue) Test Domain (Ai_Austin, Edinburgh, UK) Please report issues, firewall problems, etc to ai.ai.austin@gmail.com
 
 Note [URL Syntax](https://github.com/highfidelity/hifi/wiki/URL-Syntax)
