@@ -11,5 +11,6 @@ Currently the following domains are available for visiting:
 * [hifi.hyperkids.org](hifi://hifi.hyperkids.org/0,0,0/0,0,0) Sean's sandbox - Debian Wheezy (_hic sunt dracones_).
 * [adriania.ddns.net](hifi://adriania.ddns.net/0,0,0/0,0,0) Adrians domain (QLD Australia) - A few streets here.
 * [center.ddns.net](hifi://center.ddns.net/0,0,0/0,0,0) Johnny's domain (Chiangmai, Thailand) - nothing here yet except flat green space and sky.
+* [hifi.robodolly.com](hifi://hifi.robodolly.com/0,0,0/0,0,0) Judas' domain (UK) - admire Judas' latest inventions
 
 Note [URL Syntax](https://github.com/highfidelity/hifi/wiki/URL-Syntax)
