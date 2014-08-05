@@ -19,5 +19,5 @@
 
 **MAYA DOCS**
 
-* [Maya Script to Split Blenshapes](https://github.com/highfidelity/hifi/wiki/Maya-Script-to-Split-Blenshapes)
+* [Maya Script to Split Blendshapes](https://github.com/highfidelity/hifi/wiki/Maya-Script-to-Split-Blendshapes)
 
