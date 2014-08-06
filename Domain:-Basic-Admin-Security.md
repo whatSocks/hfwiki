@@ -9,10 +9,10 @@ Here is an example:
 {
     "basic-auth": {
         "USERNAME HERE": {
-            "password":"PASSWORD HERE"
+            "password": "PASSWORD HERE"
         },
         "USERNAME2 HERE": {
-            "password":"PASSWORD2 HERE"
+            "password": "PASSWORD2 HERE"
         }
     }
 }
