@@ -7,34 +7,34 @@ Hold your arms out to either side in a “T” pose and press the two bumper but
 # Cursors
 
 Each controller has its own cursor, drawn as a cyan dot-plus-circle. These act like a normal mouse cursor. You move them by adjusting the pitch and yaw of your controllers.
-* **Bumper button**: left-click
-* **Trigger**: right-click
+* **Bumper button:** Left-click.
+* **Trigger:** Right-click.
 
-**Developer > Hands > Sixense > Enable Sixense Mouse Input**: enable/disable the controller cursors.
-**Preferences > Invert Mouse Buttons**: swaps the left- and right-clicks.
-**Preferences > Reticle Movement Speed**: adjusts the sensitivity of the cursor movement.
+**Developer > Hands > Sixense > Enable Sixense Mouse Input:** Enable/disable the controller cursors.
+**Preferences > Invert Mouse Buttons:** Swaps the left- and right-clicks.
+**Preferences > Reticle Movement Speed:** Adjusts the sensitivity of the cursor movement.
 
-Your right-hand controller can also control the normal mouse pointer: enable/disable this control by pressing button 0 on the right-hand controller (the small skinny one between buttons 1 qnd 2).
+Your right-hand controller can also control the normal mouse pointer: enable/disable this control by pressing button 0 on the right-hand controller (the small skinny one between buttons 1 and 2).
 
 # Controller Graphics
 
-**Developer > Show Hand Info**: Draws a red disc plus sphere and pointer that depicts your controller orientation. These coincide with your “palm” positions if you have Preferences > Avatar Scale = 1.0; if you don’t then the are drawn some distance aay. Note also that your avatar’s hands will not necessarily line up the “palm” positions.
+**Developer > Show Hand Info:** Draws a red disc plus sphere and pointer that depicts your controller orientation. These coincide with your “palm” positions if you have Preferences > Avatar Scale = 1.0; if you don’t then the are drawn some distance away. Note also that your avatar’s hands will not necessarily line up the “palm” positions.
 
-**Developer > Show Hand Targets**: Draws a wire mesh ball the the position of your “finger tips”, if Show Hand Info is enabled. These are 0.3m away from your “palm” position.
+**Developer > Show Hand Targets:** Draws a wire mesh ball the position of your “finger tips”, if Show Hand Info is enabled. These are 0.3m away from your “palm” position.
 
-**Developer > Avatar > Show Skeleton Collision Shapes**: If your avatar scale != 1.0 then you’ll see green balls drawn at your avatar’s “palm” positions.
+**Developer > Avatar > Show Skeleton Collision Shapes:** If your avatar scale != 1.0 then you’ll see green balls drawn at your avatar’s “palm” positions.
 
-Developer > Hands > Sixense > Enable Sixense UI Lasers: shows/hides cyan “lasers” emanating from the position of the red disc-plus-sphere-and-pointer.
+**Developer > Hands > Sixense > Enable Sixense UI Lasers:** Shows/hides cyan “lasers” emanating from the position of the red disc-plus-sphere-and-pointer.
 
 
 # Movement
 
-**Left joystick**: moves you forwards/backwards in the direction you’re looking, and left/right.
-**Right joystick**: rotates your view up/down and left/right.
+**Left joystick:** Moves you forwards/backwards in the direction you’re looking, and left/right.
+**Right joystick:** Rotates your view up/down and left/right.
 
-**Button 4 on either controller**: Press and hold then:
+**Button 4 on either controller:** Press and hold then:
 * Tilt and horizontally rotate your controller to tilt and rotate your view.
-* Move your controller backwards/formwards/left/right/up/down/
+* Move your controller backwards/forwards/left/right/up/down to move in that direction.
 A pair of spheres are drawn to depict your controller’s orientation and movement.
 
 # Voxel Editing
@@ -43,13 +43,13 @@ If you have the controller cursors enabled, you can use the bumpers and triggers
 
 # Model Editing
 
-When you enable model editing (right-hand toolbar’s cube) a pair of lasers will be drawn.
+When you enable model editing (right-hand toolbar’s cube) a pair of lasers is drawn.
 
-**Left- or right-bumper**: toggle lasers red/blue.
-* Red: editing mode 0
-* Blue: editing mode 1
+**Left- or right-bumper:** Toggle lasers red/blue.
+* Red: Mode 0
+* Blue: Mode 1
 
-**Single-laser editing**: make one of your lasers intersect with a model then “grab” it by pulling and holding the relevant controller’s trigger.
+**Single-laser editing:** Make one of your lasers intersect with a model then “grab” it by pulling and holding the relevant controller’s trigger.
 * Mode 0: The model rotates around your controller’s location, keeping the model “looking at” the controller, and changing position with changes in your controller’s position.
 * Mode 1: The model rotates about its axis as you rotate your controller, and moves position as a multiple of changes in your controller’s position.
 
@@ -59,10 +59,10 @@ When you enable model editing (right-hand toolbar’s cube) a pair of lasers wil
 
 # Miscellaneous
 
-**Left-bumper + left-trigger**, or **right-bumper + right-trigger**: show/hide UI.
+**Left-bumper + left-trigger**, or **right-bumper + right-trigger:** show/hide UI.
 
-**Button 3 on either controller**: show/hide magnification window in VR display mode.
+**Button 3 on either controller:** Show/hide magnification window in VR display mode.
 
-**Taking off and putting on avatar attachments**: Grab an attachment per model editing and move it so that it is a normal model in the world and no longer an attachment; or grab an in-world model and make it an attachment by moving it close to one of your avatar’s joints.
+**Taking off and putting on avatar attachments:** Grab an attachment per model editing and move it so that it is a normal model in the world and no longer an attachment; or grab an in-world model and make it an attachment by moving it close to one of your avatar’s joints.
 
 **squeezeHands.js**: This script makes your avatars’ hands clench as you pull the Hydra’s triggers.
