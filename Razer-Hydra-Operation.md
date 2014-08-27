@@ -18,7 +18,7 @@ Your right-hand controller can also control the normal mouse pointer: enable/dis
 
 # Controller Graphics
 
-**Developer > Show Hand Info:** Draws a red disc plus sphere and pointer that depicts your controller orientation. These coincide with your “palm” positions if you have Preferences > Avatar Scale = 1.0; if you don’t then the are drawn some distance away. Note also that your avatar’s hands will not necessarily line up the “palm” positions.
+**Developer > Show Hand Info:** Draws a red disc plus sphere and pointer that depicts your controller orientation. These coincide with your “palm” positions if you have Preferences > Avatar Scale = 1.0; if you don’t then they are drawn some distance away. Note also that your avatar’s hands will not necessarily coincide with the “palm” positions.
 
 **Developer > Show Hand Targets:** Draws a wire mesh ball the position of your “finger tips”, if Show Hand Info is enabled. These are 0.3m away from your “palm” position.
 
@@ -53,13 +53,13 @@ When you enable model editing (right-hand toolbar’s cube) a pair of lasers is 
 * Mode 0: The model rotates around your controller’s location, keeping the model “looking at” the controller, and changing position with changes in your controller’s position.
 * Mode 1: The model rotates about its axis as you rotate your controller, and moves position as a multiple of changes in your controller’s position.
 
-**Dual-laser editing**: make both your lasers intersect with a model then “grab” it by pulling and holding both controllers’ triggers.
+**Dual-laser editing**: Make both your lasers intersect with a model then “grab” it by pulling and holding both controllers’ triggers.
 * Mode 0: Move and scale the model accoding to your controllers’ rotations.
 * Mode 1: Rotate model according to your controllers’ relative positions.
 
 # Miscellaneous
 
-**Left-bumper + left-trigger**, or **right-bumper + right-trigger:** show/hide UI.
+**Left-bumper + left-trigger**, or **right-bumper + right-trigger:** Show/hide UI.
 
 **Button 3 on either controller:** Show/hide magnification window in VR display mode.
 
